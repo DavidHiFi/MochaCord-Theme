@@ -2,7 +2,7 @@
  * @name MochaCord
  * @description A smooth, fluent and comfortable Catppuccin Mocha-style theme for Discord.
  * @author david_hifi
- * @version 3.1.73
+ * @version 3.1.74
  * @website https://github.com/DavidHiFi/MochaCord
  * @source https://github.com/DavidHiFi/MochaCord/blob/main/MochaCord.css
  * @authorId 1553713171938938891
@@ -4425,18 +4425,24 @@ body,
 
 /* Centered typing indicator, from Grande Sorciere's Centered-Typing snippet v1.0.4
    (Mayvhen): https://github.com/Mayvhen/The-Witch-Repo/tree/main/testcord/css/Centered-Typing
-   Merged into MochaCord 3.1.73. Two snippet rules are left out: the 4px lift on
+   Merged into MochaCord 3.1.74. Two snippet rules are left out: the 4px lift on
    the typing row and the 6px/4px gap on the composer. MochaCord keeps the row
    as an overlay on the composer's top edge and the composer flush, and those
    rules moved the message list up 46px on every chat. The generic selectors
    (.typing, .typingIndicator, [class*="typing"]) are dropped, since substring
    selectors cost restyle time (3.1.72), and the rules target the live classes. */
 
-/* Center the typing line. */
+/* Center the typing line. The row shrink-wraps its text by default, so centering
+   does nothing until the row spans the composer. Measured in a fixture: the text
+   sat 167px left of the composer center before the right edge rule, 0px after it. */
 .vc-typing-indicator,
 .typing_b88801 {
   justify-content: center !important;
   text-align: center !important;
+}
+.typing_b88801 {
+  right: var(--border-thickness) !important;
+  padding-left: 0 !important;
 }
 
 /* Hide the bouncing dots. */
