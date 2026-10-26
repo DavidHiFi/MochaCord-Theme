@@ -2,7 +2,7 @@
  * @name MochaCord
  * @description A smooth, fluent and comfortable Catppuccin Mocha-style theme for Discord.
  * @author david_hifi
- * @version 3.1.74
+ * @version 3.1.75
  * @website https://github.com/DavidHiFi/MochaCord
  * @source https://github.com/DavidHiFi/MochaCord/blob/main/MochaCord.css
  * @authorId 1553713171938938891
@@ -4443,6 +4443,18 @@ body,
 .typing_b88801 {
   right: var(--border-thickness) !important;
   padding-left: 0 !important;
+}
+/* The text sits one level down, in .typingDots_b88801 (a plain flex row with 8px
+   left padding) and carries a 24px left margin that made room for the dots. Both
+   have to go, or the text stays at the left. Measured on the real indicator in
+   #bo2-modding: text center 677px before, 1046px after, composer center 1047px. */
+.typing_b88801 .typingDots_b88801 {
+  justify-content: center !important;
+  padding-left: 0 !important;
+}
+.typing_b88801 .typingDots_b88801 .text_b88801 {
+  margin-left: 0 !important;
+  text-align: center !important;
 }
 
 /* Hide the bouncing dots. */
