@@ -2,20 +2,20 @@
 
 <img src="preview.png" alt="MochaCord on the Discord Friends page: Catppuccin Mocha colours, rounded panels and a frosted window" width="100%">
 
-# MochaCord
+# MochaCord Theme
 
 **A Catppuccin Mocha theme for Discord, built on Midnight, for the TestCord client mod.**
 
 Mocha colours, rounded panels and frosted popups in one CSS file.
 
-<a href="https://github.com/DavidHiFi/MochaCord/releases/latest">
+<a href="https://github.com/DavidHiFi/MochaCord-Theme/releases/latest">
 <img src="https://img.shields.io/badge/%E2%AC%87%EF%B8%8F%20DOWNLOAD%20LATEST%20RELEASE-2EA043?style=for-the-badge&labelColor=161B22" alt="Download the latest release" height="42">
 </a>
 
 <br><br>
 
-<img src="https://img.shields.io/github/v/release/DavidHiFi/MochaCord?style=flat-square&label=version&color=8957E5&labelColor=161B22" alt="Latest version">
-<img src="https://img.shields.io/github/downloads/DavidHiFi/MochaCord/total?style=flat-square&label=downloads&color=1F6FEB&labelColor=161B22" alt="Total downloads">
+<img src="https://img.shields.io/github/v/release/DavidHiFi/MochaCord-Theme?style=flat-square&label=version&color=8957E5&labelColor=161B22" alt="Latest version">
+<img src="https://img.shields.io/github/downloads/DavidHiFi/MochaCord-Theme/total?style=flat-square&label=downloads&color=1F6FEB&labelColor=161B22" alt="Total downloads">
 <img src="https://img.shields.io/badge/platform-Discord%20%28TestCord%29-DB6D28?style=flat-square&labelColor=161B22" alt="Platform: Discord with TestCord">
 
 </div>
@@ -32,7 +32,7 @@ There are two ways to install MochaCord. Pick the one that suits you.
 2. Copy this link and paste it into the box under **Online Themes**, then click **Add**:
 
    ```
-   https://raw.githubusercontent.com/DavidHiFi/MochaCord/main/MochaCord.css
+   https://raw.githubusercontent.com/DavidHiFi/MochaCord-Theme/main/MochaCord.css
    ```
 
 3. Turn MochaCord on in the list.
@@ -41,7 +41,7 @@ Online themes update themselves when the source changes, so you get new versions
 
 **Method 2: Download the file**
 
-1. Download `MochaCord.css` from the [latest release](https://github.com/DavidHiFi/MochaCord/releases/latest).
+1. Download `MochaCord.css` from the [latest release](https://github.com/DavidHiFi/MochaCord-Theme/releases/latest).
 2. Copy it to `%APPDATA%\TestCord\themes`.
 3. Open Settings ▶ Themes and turn MochaCord on.
 
@@ -94,9 +94,9 @@ Thanks for the stars, screenshots and fixes.
 
 <a href="https://www.star-history.com/?repos=DavidHiFi%2FMochaCord&amp;type=date">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=DavidHiFi/MochaCord&amp;type=date&amp;theme=dark&amp;legend=top-left" />
-    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=DavidHiFi/MochaCord&amp;type=date" />
-    <img alt="DavidHiFi/MochaCord GitHub star history" src="https://api.star-history.com/chart?repos=DavidHiFi/MochaCord&amp;type=date" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=DavidHiFi/MochaCord-Theme&amp;type=date&amp;theme=dark&amp;legend=top-left" />
+    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=DavidHiFi/MochaCord-Theme&amp;type=date" />
+    <img alt="DavidHiFi/MochaCord GitHub star history" src="https://api.star-history.com/chart?repos=DavidHiFi/MochaCord-Theme&amp;type=date" />
   </picture>
 </a>
 
@@ -115,13 +115,15 @@ Thanks for the stars, screenshots and fixes.
 
 Built on [Discord](https://discord.com) and [TestCord](https://github.com/TestcordDev/TestCord), with [Midnight](https://github.com/refact0r/midnight-discord) and the [Catppuccin](https://catppuccin.com) palette.
 
-> Missing or wrong credit? [Open an issue](https://github.com/DavidHiFi/MochaCord/issues/new) and I'll fix it.
+> Missing or wrong credit? [Open an issue](https://github.com/DavidHiFi/MochaCord-Theme/issues/new) and I'll fix it.
 
 ## Disclaimers
 
+The [MochaCord](https://github.com/DavidHiFi/MochaCord) Discord client is a separate project.
+
 Client mods such as TestCord, Vencord and Equicord are against Discord's Terms of Service. A theme needs one to load, so use them at your own risk.
 
-MochaCord was built with AI coding agents. The commit history lists Claude Code, arena-agent and halo-sparks as co-authors.
+MochaCord Theme was built with AI coding agents. The commit history lists Claude Code, arena-agent and halo-sparks as co-authors.
 
 <div align="center">
 <br>

@@ -4,7 +4,7 @@ Thanks for helping. Bug reports, ideas and pull requests are all welcome.
 
 ## Reporting a bug
 
-[Open an issue](https://github.com/DavidHiFi/MochaCord/issues/new) and include:
+[Open an issue](https://github.com/DavidHiFi/MochaCord-Theme/issues/new) and include:
 
 - what you did, what you expected and what happened instead
 - your Discord build (Stable, PTB or Canary), your TestCord version and the MochaCord version from the top of `MochaCord.css`
