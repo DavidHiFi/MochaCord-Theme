@@ -2,7 +2,7 @@
  * @name MochaCord
  * @description A smooth, fluent and comfortable Catppuccin Mocha-style theme for Discord.
  * @author davidhifi
- * @version 3.1.76
+ * @version 3.2.0
  * @website https://github.com/DavidHiFi/MochaCord-Theme
  * @source https://github.com/DavidHiFi/MochaCord-Theme/blob/main/MochaCord.css
  * @authorId 1553713171938938891
@@ -44,8 +44,6 @@ SOFTWARE.
 */
 
 /* main.css */
-@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
 :root {
     container-name: root;
 
@@ -55,10 +53,6 @@ SOFTWARE.
 
 body {
     container-name: body;
-
-    /* font, change to '' for default discord font */
-    --font: 'figtree';
-    --code-font: '';
 
     /* sizes */
     --gap: 12px; /* spacing between panels */
@@ -595,12 +589,6 @@ body {
 #app-mount,
 body {
     background: transparent !important;
-}
-
-body {
-    --font-primary: var(--font), 'gg sans', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    --font-display: var(--font), 'gg sans', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    --font-code: var(--code-font), 'gg mono', 'Source Code Pro', Consolas, Monaco, monospace;
 }
 
 [class*='scroll'] {
@@ -2431,58 +2419,6 @@ body {
 
 
 
-/* FiraCode Nerd Font - served from your local Windows install, zero network cost.
-   You can disable/remove the Google Font Loader plugin: it is no longer needed. */
-@font-face {
-    font-family: "FiraCode Nerd Font";
-    src: local("FiraCode Nerd Font Light"), local("FiraCodeNerdFont-Light");
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: "FiraCode Nerd Font";
-    src: local("FiraCode Nerd Font"), local("FiraCode Nerd Font Reg"), local("FiraCodeNerdFont-Regular");
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: "FiraCode Nerd Font";
-    src: local("FiraCode Nerd Font Med"), local("FiraCodeNerdFont-Medium");
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: "FiraCode Nerd Font";
-    src: local("FiraCode Nerd Font SemBd"), local("FiraCodeNerdFont-SemiBold");
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: "FiraCode Nerd Font";
-    src: local("FiraCode Nerd Font Bold"), local("FiraCodeNerdFont-Bold");
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
-}
-
-/* Keep this lock on body and #app-mount. Midnight redeclares Discord's font
-   variables on body, so a :root-only override is inherited too early and loses. */
-:root,
-body,
-#app-mount {
-    --font: "FiraCode Nerd Font" !important;
-    --code-font: "FiraCode Nerd Font Mono" !important;
-    --font-primary: "FiraCode Nerd Font", "Fira Code", monospace !important;
-    --font-display: "FiraCode Nerd Font", "Fira Code", monospace !important;
-    --font-headline: "FiraCode Nerd Font", "Fira Code", monospace !important;
-    --font-code: "FiraCode Nerd Font Mono", "FiraCode Nerd Font", "Fira Code", monospace !important;
-    font-family: "FiraCode Nerd Font", "Fira Code", monospace !important;
-}
-
 :root {
     --gDM-online: linear-gradient(to right, rgb(68, 105, 68), transparent);
     --gDM-offline: linear-gradient(to right, rgb(66, 66, 66), transparent);
@@ -2626,11 +2562,11 @@ body {
 /* Reorder expression picker buttons (GIF | Sticker | Emoji). Keyed on the
    button classes, not aria-label: an attribute inside :has() makes every
    aria-label write in the app re-check the whole tree (3.1.72). */
-.expression-picker-chat-input-button:has(> .emojiButton__74017) {
+:where(html:not([data-mc-picker-order="stock"])) .expression-picker-chat-input-button:has(> .emojiButton__74017) {
     order: 3 !important;
     ~ div { order: 2; }
 }
-.buttons__74017 > .expression-picker-chat-input-button:has(> .button__74017:not(.emojiButton__74017, .stickerButton__74017)) {
+:where(html:not([data-mc-picker-order="stock"])) .buttons__74017 > .expression-picker-chat-input-button:has(> .button__74017:not(.emojiButton__74017, .stickerButton__74017)) {
     order: 1 !important;
     ~ div { order: 3; }
 }
@@ -2695,7 +2631,9 @@ body {
 div[class*="-micButtonParent"] button[role="switch"],
 div[class^="audioButtonParent__"] button[role="switch"] {
     border-radius: var(--radius-sm) !important;
-    & ~ button { display: none; }
+}
+:where(html:not([data-mc-voice-menus="show"])) :is(div[class*="-micButtonParent"], div[class^="audioButtonParent__"]) button[role="switch"] ~ button {
+    display: none;
 }
 div.container__37e49 > div.buttons__37e49 {
     gap: 1px;
@@ -2779,47 +2717,6 @@ div.container__37e49 > div.buttons__37e49 {
     }
 }
 
-/* ===== Notifications Button (top of server list) ===== */
-.vc-ranb-button {
-    margin: 0 var(--space-md);
-    display: flex;
-    position: relative;
-    width: var(--guildbar-avatar-size);
-    height: var(--guildbar-avatar-size);
-    min-height: 40px;
-    max-height: 40px !important;
-    max-width: 40px !important;
-    padding: 2px;
-    background-color: var(--background-mod-subtle);
-    border: none;
-    border-radius: 12px;
-    text-decoration: none !important;
-    font-size: 0;
-    transition: scale .15s ease-out, background-color .15s ease-out, color .15s ease-out;
-    left: -3px;
-
-    &::after {
-        content: "";
-        position: absolute;
-        width: 24px;
-        height: 24px;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background-position: center;
-        background-size: 24px 24px;
-        background-repeat: no-repeat;
-        background-image: url("data:image/svg+xml,%3Csvg%20x%3D%220%22%20y%3D%220%22%20class%3D%22icon__9293f%22%20aria-hidden%3D%22true%22%20role%3D%22img%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20fill%3D%22none%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23D8D8DB%22%20d%3D%22M9.7%202.89c.18-.07.32-.24.37-.43a2%202%200%200%201%203.86%200c.05.2.19.36.38.43A7%207%200%200%201%2019%209.5v2.09c0%20.12.05.24.13.33l1.1%201.22a3%203%200%200%201%20.77%202.01v.28c0%20.67-.34%201.29-.95%201.56-1.31.6-4%201.51-8.05%201.51-4.05%200-6.74-.91-8.05-1.5-.61-.28-.95-.9-.95-1.57v-.28a3%203%200%200%201%20.77-2l1.1-1.23a.5.5%200%200%200%20.13-.33V9.5a7%207%200%200%201%204.7-6.61ZM9.18%2019.84A.16.16%200%200%200%209%2020a3%203%200%201%200%206%200c0-.1-.09-.17-.18-.16a24.86%2024.86%200%200%201-5.64%200Z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
-    }
-
-    &:hover {
-        background: var(--brand-500);
-        &::after {
-            background-image: url("data:image/svg+xml,%3Csvg%20x%3D%220%22%20y%3D%220%22%20class%3D%22icon__9293f%22%20aria-hidden%3D%22true%22%20role%3D%22img%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20fill%3D%22none%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23FFFFFF%22%20d%3D%22M9.7%202.89c.18-.07.32-.24.37-.43a2%202%200%200%201%203.86%200c.05.2.19.36.38.43A7%207%200%200%201%2019%209.5v2.09c0%20.12.05.24.13.33l1.1%201.22a3%203%200%200%201%20.77%202.01v.28c0%20.67-.34%201.29-.95%201.56-1.31.6-4%201.51-8.05%201.51-4.05%200-6.74-.91-8.05-1.5-.61-.28-.95-.9-.95-1.57v-.28a3%203%200%200%201%20.77-2l1.1-1.23a.5.5%200%200%200%20.13-.33V9.5a7%207%200%200%201%204.7-6.61ZM9.18%2019.84A.16.16%200%200%200%209%2020a3%203%200%201%200%206%200c0-.1-.09-.17-.18-.16a24.86%2024.86%200%200%201-5.64%200Z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
-        }
-    }
-}
-
 /* ===== Fix toggle switch bounding box (post Discord update) ===== */
 /* Target the switch wrapper directly. A document-wide relational selector
    repeatedly invalidates chat styles when unrelated DOM nodes change. */
@@ -2842,25 +2739,27 @@ input[type="checkbox"][role="switch"] {
 }
 
 /* Force namestyles (Discord Nitro + ShowMeYourName plugin) to white */
-[class*="container_dfb989"],
-[class*="innerContainer_dfb989"],
-.smyn-container,
-[class*="smyn-name"],
-.smyn-name,
-.smyn-first-name,
-.smyn-last-name {
+:where(html:not([data-mc-white-names="off"])) :is(
+    [class*="container_dfb989"],
+    [class*="innerContainer_dfb989"],
+    .smyn-container,
+    [class*="smyn-name"],
+    .smyn-name,
+    .smyn-first-name,
+    .smyn-last-name
+) {
     color: #ffffff !important;
     -webkit-text-fill-color: #ffffff !important;
 }
 
 /* ===== VoiceButtons plugin recolor (Catppuccin Mocha) ===== */
-.vc-btn-base.vc-btn-secondary {
+:where(html:not([data-mc-voice-buttons="stock"])) .vc-btn-base.vc-btn-secondary {
     background-color: color-mix(in srgb, var(--blue-2) 90%, transparent) !important;
 }
-.vc-btn-base.vc-btn-secondary:hover {
+:where(html:not([data-mc-voice-buttons="stock"])) .vc-btn-base.vc-btn-secondary:hover {
     background-color: var(--blue-1) !important;
 }
-.vc-btn-base.vc-btn-secondary svg path {
+:where(html:not([data-mc-voice-buttons="stock"])) .vc-btn-base.vc-btn-secondary svg path {
     fill: var(--bg-1) !important;
 }
 
@@ -4373,7 +4272,7 @@ body,
 
 /* The native Windows title bar already shows the server and channel.
    Hide Discord's duplicate title text; keep the bar, navigation and toolbar. */
-.bar_c38106 > .title_c38106 > * {
+:where(html:not([data-mc-bar-title="show"])) .bar_c38106 > .title_c38106 > * {
     visibility: hidden;
 }
 
@@ -4435,12 +4334,11 @@ body,
 /* Center the typing line. The row shrink-wraps its text by default, so centering
    does nothing until the row spans the composer. Measured in a fixture: the text
    sat 167px left of the composer center before the right edge rule, 0px after it. */
-.vc-typing-indicator,
-.typing_b88801 {
+:where(html:not([data-mc-typing="left"])) :is(.vc-typing-indicator, .typing_b88801) {
   justify-content: center !important;
   text-align: center !important;
 }
-.typing_b88801 {
+:where(html:not([data-mc-typing="left"])) .typing_b88801 {
   right: var(--border-thickness) !important;
   padding-left: 0 !important;
 }
@@ -4448,20 +4346,20 @@ body,
    left padding) and carries a 24px left margin that made room for the dots. Both
    have to go, or the text stays at the left. Measured on the real indicator in
    #bo2-modding: text center 677px before, 1046px after, composer center 1047px. */
-.typing_b88801 .typingDots_b88801 {
+:where(html:not([data-mc-typing="left"])) .typing_b88801 .typingDots_b88801 {
   justify-content: center !important;
   padding-left: 0 !important;
 }
-.typing_b88801 .typingDots_b88801 .text_b88801 {
+:where(html:not([data-mc-typing="left"])) .typing_b88801 .typingDots_b88801 .text_b88801 {
   margin-left: 0 !important;
   text-align: center !important;
 }
 
 /* Hide the bouncing dots. */
-.dots_b88801,
-.typing_b88801 .dots_b88801,
-.vc-typing-indicator-dots,
-.vc-typing-indicator > div:nth-of-type(2) {
+:where(html:not([data-mc-typing-dots="show"])) .dots_b88801,
+:where(html:not([data-mc-typing-dots="show"])) .typing_b88801 .dots_b88801,
+:where(html:not([data-mc-typing-dots="show"])) .vc-typing-indicator-dots,
+:where(html:not([data-mc-typing-dots="show"])) .vc-typing-indicator > div:nth-of-type(2) {
   display: none !important;
   visibility: hidden !important;
   animation: none !important;
@@ -4995,4 +4893,58 @@ li.containerDefault_c69b6d > .list_c3cd7d {
 .safetyBanner__51e4d {
     background: transparent;
     box-shadow: none;
+}
+
+/* ===== HaloCord theme options =====
+   HaloCord's MochaCord window sets these data-mc-* attributes and --mc-* colours
+   on <html>. With none of them set, the theme looks exactly as it does above. */
+
+/* Midnight toggles. html[...] body outranks the defaults on body. */
+html[data-mc-animations="on"] body { --animations: on; }
+html[data-mc-top-bar-buttons="hide"] body { --top-bar-button-position: hide; }
+html[data-mc-top-bar-buttons="serverlist"] body { --top-bar-button-position: serverlist; }
+html[data-mc-top-bar-buttons="titlebar"] body { --top-bar-button-position: titlebar; }
+html[data-mc-top-bar-title="hide"] body { --top-bar-title-position: hide; }
+html[data-mc-top-bar-title="left"] body { --top-bar-title-position: left; }
+html[data-mc-window-controls="off"] body { --custom-window-controls: off; }
+html[data-mc-transparency="off"] body { --transparency-tweaks: off; }
+html[data-mc-panel-blur="off"] body { --panel-blur: off; }
+html[data-mc-chatbar="off"] body { --custom-chatbar: off; }
+html[data-mc-small-user-panel="off"] body { --small-user-panel: off; }
+
+/* Custom colours. Each one only applies while its attribute is present. */
+html[data-mc-accent] {
+    --accent-1: var(--mc-accent);
+    --accent-2: var(--mc-accent);
+    --accent-3: var(--mc-accent);
+    --accent-4: color-mix(in srgb, var(--mc-accent) 88%, black);
+    --accent-5: color-mix(in srgb, var(--mc-accent) 76%, black);
+}
+html[data-mc-text] {
+    --text-1: color-mix(in srgb, var(--mc-text), white 30%);
+    --text-2: var(--mc-text);
+    --text-3: color-mix(in srgb, var(--mc-text) 88%, black);
+}
+html[data-mc-text-muted] {
+    --text-4: var(--mc-text-muted);
+    --text-5: color-mix(in srgb, var(--mc-text-muted) 70%, black);
+}
+html[data-mc-surface] {
+    --bg-1: color-mix(in srgb, var(--mc-surface), white 12%);
+    --bg-2: var(--mc-surface);
+}
+html[data-mc-background] {
+    --bg-3: color-mix(in srgb, var(--mc-background), black 20%);
+    --bg-4: color-mix(in srgb, var(--mc-background) 46%, transparent);
+}
+html[data-mc-background] body {
+    --bg-floating: var(--mc-background);
+}
+html[data-mc-hover-color] {
+    --border-hover: var(--mc-hover-color);
+}
+
+/* Hover colours off: panel borders keep their normal colour on hover. */
+html[data-mc-hover="off"] {
+    --border-hover: var(--border);
 }

@@ -47,7 +47,7 @@ Online themes update themselves when the source changes, so you get new versions
 
 To update a file, replace it and restart Discord. TestCord caches themes, so a restart may be needed.
 
-**Both methods need the font.** Install [FiraCode Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/latest) if it's missing. The theme reads it from your system.
+**MochaCord leaves fonts alone.** It uses your client's font. In HaloCord, pick one under Settings ▶ Themes ▶ UI font.
 
 ## Features
 
@@ -57,7 +57,7 @@ To update a file, replace it and restart Discord. TestCord caches themes, so a r
 - **Rounded panels:** every panel gets rounded corners and a gap between them.
 - **Chat bar:** lines up with the user panel at the bottom.
 - **Window buttons:** round close, minimise and maximise dots in the title bar.
-- **FiraCode Nerd Font:** used for all text.
+- **HaloCord options:** in HaloCord, the MochaCord window sets custom colours, typing indicator placement and optional features.
 
 ### Frosted glass
 
@@ -78,7 +78,7 @@ To update a file, replace it and restart Discord. TestCord caches themes, so a r
 > **Frosted window.** Set TestCord's window material to `acrylic` in its settings to get the frosted window background on Windows.
 
 > [!IMPORTANT]
-> **Some parts load from the internet.** Midnight still fetches its [Figtree](https://fonts.google.com/specimen/Figtree) font from Google Fonts, and the three snippets load from their authors' repos each time Discord starts. If an author changes a snippet, the theme changes with it.
+> **Some parts load from the internet.** The three snippets load from their authors' repos each time Discord starts. If an author changes a snippet, the theme changes with it.
 
 ## Contributing
 
@@ -111,7 +111,6 @@ Thanks for the stars, screenshots and fixes.
 | **amozeo** ([discord-css-snippets](https://github.com/amozeo/discord-css-snippets)) | The compact search button snippet, loaded at startup. |
 | **davart154** ([Themes](https://github.com/davart154/Themes)) | The Mana Page Switcher snippet for search results, loaded at startup. |
 | **yiruzu** ([vencord-snippets](https://github.com/yiruzu/vencord-snippets)) | The Bubble Usernames snippet, loaded at startup. |
-| **Nerd Fonts** ([ryanoasis/nerd-fonts](https://github.com/ryanoasis/nerd-fonts)) | FiraCode Nerd Font, the theme's font. You install it yourself. |
 
 Built on [Discord](https://discord.com) and [TestCord](https://github.com/TestcordDev/TestCord), with [Midnight](https://github.com/refact0r/midnight-discord) and the [Catppuccin](https://catppuccin.com) palette.
 
@@ -119,7 +118,7 @@ Built on [Discord](https://discord.com) and [TestCord](https://github.com/Testco
 
 ## Disclaimers
 
-The [MochaCord](https://github.com/DavidHiFi/MochaCord) Discord client is a separate project.
+The [HaloCord](https://github.com/DavidHiFi/HaloCord) Discord client is a separate project.
 
 Client mods such as TestCord, Vencord and Equicord are against Discord's Terms of Service. A theme needs one to load, so use them at your own risk.
 
