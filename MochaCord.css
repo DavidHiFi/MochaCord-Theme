@@ -2,7 +2,7 @@
  * @name MochaCord
  * @description A smooth, fluent and comfortable Catppuccin Mocha-style theme for Discord.
  * @author david_hifi
- * @version 3.1.75
+ * @version 3.1.76
  * @website https://github.com/DavidHiFi/MochaCord-Theme
  * @source https://github.com/DavidHiFi/MochaCord-Theme/blob/main/MochaCord.css
  * @authorId 1553713171938938891
@@ -4970,4 +4970,29 @@ li.containerDefault_c69b6d > .list_c3cd7d {
     .vc-member-list-decorators-wrapper > * {
         margin-left: 0 !important;
     }
+}
+
+/* 3.1.76: the invite modal's recipient list read as a misplaced lighter
+   panel behind the rows. Measured 2026-11-01 (owner screenshot + CDP):
+   shell surface #171723, list panel #1d1d2e - the Catppuccin base tint
+   (--bg-4) and solid --bg-floating still painting on shell descendants,
+   because this shell is not in the acrylic scope that zeroes those levels
+   on modal roots. Inside the shell they now fall through to the shell's
+   own surface. The shell root keeps its paint, so the modal surface and
+   the search field are unchanged; tooltips and menus portal outside the
+   shell and keep their own look. */
+.modal__67dba * {
+    --background-base-low: transparent;
+    --background-base-lower: transparent;
+    --background-base-lowest: transparent;
+    --bg-floating: transparent;
+}
+
+/* 3.1.76: the DM safety banner ("Watch out for stolen accounts") painted a
+   solid --background-surface-high card (#181825 measured) with an elevation
+   shadow on the lighter chat surface, reading as an out-of-place popup. Lay
+   it bare on the chat: same icon, copy and buttons, no box of its own. */
+.safetyBanner__51e4d {
+    background: transparent;
+    box-shadow: none;
 }
