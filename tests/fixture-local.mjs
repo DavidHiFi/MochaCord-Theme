@@ -6,7 +6,7 @@ import { spawn } from 'node:child_process';
 const repo = new URL('..', import.meta.url);
 const themePath = new URL('MochaCord.css', repo);
 const fixturePath = new URL('tests/acrylic.js', repo);
-const browser = 'C:/Users/localuser/AppData/Local/BraveSoftware/Brave-Browser/Application/brave.exe';
+const browser = process.env.MOCHACORD_BROWSER || 'C:/Users/localuser/AppData/Local/BraveSoftware/Brave-Browser/Application/brave.exe';
 const port = '9555';
 const profileDir = process.env.TEMP + '\\opencode\\mochacord-fixture-profile';
 const htmlPath = process.env.TEMP + '\\opencode\\mochacord-fixture-page.html';
