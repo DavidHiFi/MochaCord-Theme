@@ -2,7 +2,7 @@
  * @name MochaCord
  * @description A smooth, fluent and comfortable Catppuccin Mocha-style theme for Discord.
  * @author davidhifi
- * @version 3.2.0
+ * @version 3.3.0
  * @website https://github.com/DavidHiFi/MochaCord-Theme
  * @source https://github.com/DavidHiFi/MochaCord-Theme/blob/main/MochaCord.css
  * @authorId 1553713171938938891
@@ -3527,11 +3527,14 @@ body {
 
 /* ===== Voice call: seamless frosted stage, every view =====
    Discord paints opaque near-black layers throughout the call: the base
-   behind the call view, the fullscreen wrapper, the UA ::backdrop used by
-   the fullscreen/focused camera views, and the wrappers it draws around
-   video (tile letterbox, enlarged camera, fullscreen stream frame). Clear
-   them and tint the stage with bg-4, the same tint midnight gives every
-   other panel. The frost itself comes from the window's Windows acrylic. */
+   behind the call view, the call view's own root, the fullscreen wrapper,
+   the UA ::backdrop used by the fullscreen/focused camera views, and the
+   wrappers it draws around video (tile letterbox, enlarged camera,
+   fullscreen stream frame). Clear them and tint the stage once, on the
+   call view root, with bg-4, the same tint midnight gives every other
+   panel, in grid and focus layouts alike. The frost itself comes from the
+   window's Windows acrylic. When HaloCord reports the window has no blur
+   (data-mc-window-blur="off"), the stage paints the Mocha base instead. */
 
 [class*="callContainer"],
 [class*="fullScreen"][class*="wrapper"],
@@ -3544,8 +3547,11 @@ body {
 ::backdrop {
     background: none !important;
 }
-[class*="videoGrid"] {
-    background-color: var(--bg-4) !important;
+[class*="callContainer"] > [class*="root_"] {
+    background: var(--bg-4) !important;
+}
+html[data-mc-window-blur="off"] [class*="callContainer"] > [class*="root_"] {
+    background: var(--bg-floating) !important;
 }
 /* No CSS backdrop blur anywhere on the stage (v3.1.1). Every layer behind it
    is transparent down to the acrylic window, so the blur has nothing to
