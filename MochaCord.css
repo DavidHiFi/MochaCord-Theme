@@ -4361,6 +4361,13 @@ body,
   text-align: center !important;
 }
 
+/* The bouncing dots sat flush against the name and slightly low. Give them a gap
+   and lift them onto the text's centre line, in both placements. */
+.typing_b88801 :is(.dots_b88801, .ellipsis_b88801) {
+  margin-inline-end: 3px !important;
+  translate: -2px -2px;
+}
+
 /* Hide the bouncing dots. */
 :where(html:not([data-mc-typing-dots="show"])) .dots_b88801,
 :where(html:not([data-mc-typing-dots="show"])) .typing_b88801 .dots_b88801,
