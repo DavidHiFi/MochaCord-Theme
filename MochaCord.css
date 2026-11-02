@@ -2819,6 +2819,12 @@ body {
        because an opaque fill makes it a wasted GPU pass (the
        notifications took this route in 3.1.29). */
     --mochacord-acrylic-tooltip: var(--bg-1);
+    /* Hover toolbars (message action bar, status bubble react/reply bar) sit
+       on top of the content they act on. With the 76% fill plus frost, the
+       content showed crisply through whenever Chromium skipped the frost,
+       and inside a popup the nested strip cleared them completely. They take
+       the opaque Mocha base, like notifications. */
+    --mochacord-acrylic-flyout: var(--bg-floating);
     /* Normalize the sampled alpha before blurring. A regular CSS blur leaves
        sharp text underneath when Discord's backdrop is translucent.
        Keep the SVG embedded because cross-origin filter references fail. */
@@ -3137,19 +3143,23 @@ body {
     fill: var(--mochacord-acrylic-tooltip) !important;
 }
 
-/* The message hover bar keeps its glass over messages inside popups (pins,
-   mentions). The nested strip would otherwise bleach it to fully
-   transparent: the bar matches the strip's inner popover scopes while the
-   message popout matches the outer list. Scoped to message popouts so bars
-   in normal chat keep their exact stock styling; the :not() id outranks
+/* Hover toolbars paint the opaque flyout fill in every position: over chat,
+   inside pins and mentions, and on the profile status bubble. The glass
+   block matched them through popover_ and let the message underneath show
+   through (the NEW divider read crisply through the bar), and inside a
+   popup the nested strip cleared them to fully transparent (the status
+   bubble's react/reply bar showed the desktop). The :not() id outranks
    every copy of the strip. */
-:is([class*="messagesPopoutWrap_"], [class*="recentMentionsPopout_"]) :is(
+:is(
+    .popover_f84418,
+    .popover_c97e55,
+    .buttonsInner__5126c,
     [class*="miniPopover_"],
-    [class*="buttonsInner_"]
+    [class*="popoverReactionHoverBar_"]
 ):not(#mochacord-messagebar-guard) {
-    background: var(--mochacord-acrylic-background) !important;
-    -webkit-backdrop-filter: var(--mochacord-acrylic-filter) !important;
-    backdrop-filter: var(--mochacord-acrylic-filter) !important;
+    background: var(--mochacord-acrylic-flyout) !important;
+    -webkit-backdrop-filter: none !important;
+    backdrop-filter: none !important;
 }
 
 /* Select dropdowns always paint their own acrylic, even inline. Discord

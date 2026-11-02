@@ -10,7 +10,12 @@ window.addEventListener("load", () => {
     document.body.appendChild(probeBg);
     probeBg.style.backgroundColor = 'var(--bg-1)';
     const EX = { tooltip: getComputedStyle(probeBg).backgroundColor };
+    probeBg.style.backgroundColor = 'var(--bg-floating)';
+    EX.flyout = getComputedStyle(probeBg).backgroundColor;
     probeBg.remove();
+    /* Hover toolbars take the opaque flyout fill with no frost. */
+    const FLYOUT_IDS = new Set(['plugin-message-popover', 'status-hoverbar']);
+    const solidFlyout = s => s.blur === 'none' && s.background === EX.flyout;
     const specs = [
         ['picker', 'contentWrapper__08434'], ['menu', 'menu_c1e9c4', 'menu'],
         ['tooltip', 'tooltip_fa450d'], ['profile', 'outer_c0bea0 user-profile-popout'],
@@ -40,7 +45,7 @@ window.addEventListener("load", () => {
         ['plugin-update-modal', 'vc-update-modal-root'], ['plugin-author-modal', 'vc-plugin-modal-author'],
         ['tooltip-legacy-primary', 'tooltipPrimary_c36707'], ['tooltip-legacy-grey', 'tooltipGrey_c36707'],
         ['tooltip-legacy-red', 'tooltipRed_c36707'], ['reward-tooltip', 'rewardTooltip_cc3943'],
-        ['popout-loader', 'popoutLoader_newhash']
+        ['popout-loader', 'popoutLoader_newhash'], ['status-hoverbar', 'popover_c97e55']
     ];
     const app = document.getElementById('app-mount');
     app.replaceChildren();
@@ -86,6 +91,8 @@ window.addEventListener("load", () => {
         const frosted = result.blur.includes('data:image/svg+xml') || result.before.includes('data:image/svg+xml');
         if (tooltipFam) {
             if (result.blur !== 'none' || result.background !== EX.tooltip || result.boxShadow === 'none') fail.push(result);
+        } else if (FLYOUT_IDS.has(id)) {
+            if (!solidFlyout(result)) fail.push(result);
         } else {
             if (!frosted || result.portal !== 'auto' || result.animator !== 'auto') fail.push(result);
         }
@@ -155,17 +162,23 @@ window.addEventListener("load", () => {
     app.append(modalWrap);
     const modalSelectStyle = describe(modalSelect);
     if (!modalSelectStyle.blur.includes('data:image/svg+xml')) fail.push({ id: modalSelect.id, ...modalSelectStyle });
-    /* 3.1.27: the message hover bar keeps its glass over messages inside
-       popups (pins, mentions); the nested strip would otherwise bleach it. */
+    /* Hover toolbars stay opaque inside popups too (pins, mentions,
+       the profile status bubble); the nested strip would otherwise clear
+       them to fully transparent. */
     const pinsWrap = document.createElement('div');
     pinsWrap.className = 'fixture-portal layerContainer_newhash messagesPopoutWrap__432f4';
     pinsWrap.style.cssText = 'position:relative;width:260px;height:260px';
     const miniBar = add(pinsWrap, 'fixture-surface miniPopover_e21ed7', 'minipopover-in-pins');
     const fullBar = add(pinsWrap, 'fixture-surface buttonsInner__5126c', 'hoverbar-in-pins');
     app.append(pinsWrap);
-    for (const el of [miniBar, fullBar]) {
+    const profileWrap = document.createElement('div');
+    profileWrap.className = 'fixture-portal layerContainer_newhash outer_c0bea0 user-profile-popout';
+    profileWrap.style.cssText = 'position:relative;width:260px;height:120px';
+    const statusBar = add(profileWrap, 'fixture-surface popover_c97e55', 'status-hoverbar-in-profile');
+    app.append(profileWrap);
+    for (const el of [miniBar, fullBar, statusBar]) {
         const s = describe(el);
-        if (!s.blur.includes('data:image/svg+xml')) fail.push({ id: el.id, ...s });
+        if (!solidFlyout(s)) fail.push({ id: el.id, ...s });
     }
     /* 3.1.28: menu surfaces round to 8px like the context menus, and inner
        menu surfaces stay clear so the outer rounded corners read — the
