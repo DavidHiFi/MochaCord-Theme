@@ -2,7 +2,7 @@
  * @name MochaCord
  * @description A smooth, fluent and comfortable Catppuccin Mocha-style theme for Discord.
  * @author davidhifi
- * @version 3.3.1
+ * @version 3.3.2
  * @website https://github.com/DavidHiFi/MochaCord-Theme
  * @source https://github.com/DavidHiFi/MochaCord-Theme/blob/main/MochaCord.css
  * @authorId 1553713171938938891
@@ -4971,3 +4971,8 @@ html[data-mc-hover-color] {
 html[data-mc-hover="off"] {
     --border-hover: var(--border);
 }
+/* The quest page has its own rounded header dock. Its stock top divider extended past the corner. */
+#app-mount .container_ZTJWQo {
+    border-top: none !important;
+}
+
