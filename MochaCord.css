@@ -2,7 +2,7 @@
  * @name MochaCord
  * @description A smooth, fluent and comfortable Catppuccin Mocha-style theme for Discord.
  * @author davidhifi
- * @version 3.3.2
+ * @version 3.3.3
  * @website https://github.com/DavidHiFi/MochaCord-Theme
  * @source https://github.com/DavidHiFi/MochaCord-Theme/blob/main/MochaCord.css
  * @authorId 1553713171938938891
@@ -411,7 +411,7 @@ body {
 }
 
 /* channel messages bar */
-.barBase_j9Vvzj:not(.bottomBar_HOJNvw) {
+.barBase_j9Vvzj:not(.bottomBar_j9Vvzj) {
     top: 12px;
     left: 12px;
     right: 12px;
