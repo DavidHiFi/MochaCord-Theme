@@ -2,7 +2,7 @@
  * @name MochaCord
  * @description A smooth, fluent and comfortable Catppuccin Mocha-style theme for Discord.
  * @author davidhifi
- * @version 3.3.0
+ * @version 3.3.1
  * @website https://github.com/DavidHiFi/MochaCord-Theme
  * @source https://github.com/DavidHiFi/MochaCord-Theme/blob/main/MochaCord.css
  * @authorId 1553713171938938891
@@ -69,38 +69,38 @@ body {
 /* panel separation */
 .container__89463 > .toolbar__89463 /* server boosts titlebar */,
 .container__89463 > .contentContainer__89463 /* server boosts tab */,
-.guilds__5e434 /* server list */,
-.sidebarList__5e434 /* channel list (includes dm list) */,
-.panels__5e434 /* user panel */,
-.chat_f75fb0 > .subtitleContainer_f75fb0 /* chat titlebar */,
-.chatContent_f75fb0 /* chat */,
-.container_c8ffbb /* member list */,
-.content_f75fb0 > .membersWrap_c8ffbb /* forum post member list */,
-.container__133bf > .container__9293f /* friends titlebar */,
-.container_f391e3 > .container__9293f /* message requests titlebar */,
-.homeWrapper__0920e > .container__9293f /* nitro page titlebar */,
-.container__01ae2 > .container__9293f /* vc chat titlebar */,
-.container_fb64c9 > .container__9293f /* new thread panel */,
-.peopleColumn__133bf /* online friends */,
-.nowPlayingColumn__133bf /* active now */,
-.mainPageScroller__80907 /* nitro page */,
-.headerBar__1a9ce /* quests page titlebar */,
+.guilds_pog62O /* server list */,
+.sidebarList_pog62O /* channel list (includes dm list) */,
+.panels_pog62O /* user panel */,
+.chat_z_gUBg > .subtitleContainer_z_gUBg /* chat titlebar */,
+.chatContent_z_gUBg /* chat */,
+.container_86es0b /* member list */,
+.content_z_gUBg > .membersWrap_86es0b /* forum post member list */,
+.container_zrUwGA > .container_ybUK7Z /* friends titlebar */,
+.container_nMe-a6 > .container_ybUK7Z /* message requests titlebar */,
+.homeWrapper__0920e > .container_ybUK7Z /* nitro page titlebar */,
+.container_FrbQJp > .container_ybUK7Z /* vc chat titlebar */,
+.container_UU236g > .container_ybUK7Z /* new thread panel */,
+.peopleColumn_zrUwGA /* online friends */,
+.nowPlayingColumn_zrUwGA /* active now */,
+.mainPageScroller_IRnLy8 /* nitro page */,
+.headerBar_tSk_LE /* quests page titlebar */,
 .scroller__23746 /* quests page */,
-.container_f391e3 > .content_f75fb0 /* message requests */,
-.shop__6db1d /* shop */,
-.content_f75fb0 > aside > .outer_c0bea0 /* dm user panel */,
-.searchResultsWrap_a98f3b /* search results */,
-.container_f369db /* forum */,
-.chat_fb64c9 /* new thread panel */,
+.container_nMe-a6 > .content_z_gUBg /* message requests */,
+.shop_Mqg79R /* shop */,
+.content_z_gUBg > aside > .outer_P1YEjQ /* dm user panel */,
+.searchResultsWrap_QHVbp3 /* search results */,
+.container_BkGrJJ /* forum */,
+.chat_UU236g /* new thread panel */,
 .container_a592e1 /* server discovery */,
-.callContainer_cb9592 /* vc container */,
-.wrapper_cb9592.sidebarOpen_cb9592 .callContainer_cb9592 /* vc container when chat open */,
-.callContainer__722ff /* stage */,
-.chat_f75fb0 > .header_c791b2 /* server members header */,
-.chat_f75fb0 > .scrollerBase_d125d2 /* server members page */,
-.chat_f75fb0 > .header__0b563  /* server channels and roles header */,
-.chat_f75fb0 > .container__0b563 /* server channels and roles page */,
-.container__8a031 /* popout modals */ {
+.callContainer_hbKzX7 /* vc container */,
+.wrapper_hbKzX7.sidebarOpen_hbKzX7 .callContainer_hbKzX7 /* vc container when chat open */,
+.callContainer_DwQMm_ /* stage */,
+.chat_z_gUBg > .header_zjGJlN /* server members header */,
+.chat_z_gUBg > .scrollerBase_tqapBM /* server members page */,
+.chat_z_gUBg > .header_xTP3zy  /* server channels and roles header */,
+.chat_z_gUBg > .container_xTP3zy /* server channels and roles page */,
+.container_dvN-MP /* popout modals */ {
     background-color: var(--background-base-lower);
     border-radius: var(--radius-lg);
     border: var(--border-thickness) solid var(--border-subtle);
@@ -113,25 +113,25 @@ body {
     }
 }
 
-.panels__5e434 /* user panel */ {
+.panels_pog62O /* user panel */ {
     bottom: 0;
     left: 0;
     width: 100%;
 }
 
-.sidebar__5e434 /* server list + channel list + user panel group */,
-.popout__0bd4a .content__0bd4a /* VC popout spacing */ {
+.sidebar_pog62O /* server list + channel list + user panel group */,
+.popout_9Aa-7R .content_9Aa-7R /* VC popout spacing */ {
     margin: 0 var(--gap) var(--gap) var(--gap);
 }
 
-.guilds__5e434 /* server list */ {
+.guilds_pog62O /* server list */ {
     margin-bottom: calc(var(--custom-app-panels-height, 0) + var(--gap));
     margin-right: var(--gap);
 }
-.guilds__5e434 + div:not(.sidebarList__5e434) /* betterfolders */ {
+.guilds_pog62O + div:not(.sidebarList_pog62O) /* betterfolders */ {
     width: 100% !important;
 }
-.scroller_ef3116 /* server list inner scroller */ {
+.scroller_5dqHTG /* server list inner scroller */ {
     padding-top: var(--custom-guild-list-padding) !important;
     padding-bottom: var(--custom-guild-list-padding);
     /* 3.1.71: Discord's scrollbarGutterStable reserves an 8px gutter here, which
@@ -139,37 +139,37 @@ body {
     scrollbar-gutter: auto !important;
     scrollbar-width: none !important;
 }
-.folderGroup__48112 {
+.folderGroup_RTMSuZ {
     width: 100%;
 }
-.listItem__650eb {
+.listItem_rwEpIL {
     width: 100%;
 }
 
-.sidebarList__5e434 /* channel list */ {
+.sidebarList_pog62O /* channel list */ {
     margin-bottom: calc(var(--custom-app-panels-height, 0) + var(--gap));
 }
-.container__2637a /* channel list inner */ {
+.container_H5ozaj /* channel list inner */ {
     padding-bottom: 0;
 }
-.clickable_f37cb1,
-    .container__2637a /* channel list inner */,
-    .header_f37cb1 /* server name */ {
+.clickable_XH4OpX,
+    .container_H5ozaj /* channel list inner */,
+    .header_XH4OpX /* server name */ {
     background: none;
 }
-.scroller__629e4 /* channel list inner scroller */ {
+.scroller_ysO7Gy /* channel list inner scroller */ {
     margin-bottom: 0;
 }
 
 /* fix discord's idiotic server banners */
-.bannerImage_f37cb1,
-.bannerImg_f37cb1 {
+.bannerImage_XH4OpX,
+.bannerImg_XH4OpX {
     width: 100%;
 }
-.bannerVisible_f37cb1 .headerEllipseBackdrop_f37cb1 {
+.bannerVisible_XH4OpX .headerEllipseBackdrop_XH4OpX {
     display: none;
 }
-.headerGlass_f37cb1 {
+.headerGlass_XH4OpX {
     top: 0;
     left: 0;
     right: 0;
@@ -177,98 +177,98 @@ body {
     border-radius: var(--radius-lg) var(--radius-lg) 0 0;
 }
 
-.sidebar__5e434:after /* server list + channel list bottom shadow */ {
+.sidebar_pog62O:after /* server list + channel list bottom shadow */ {
     display: none;
 }
 
-.wrapper_ef3116 /* remove server list shadow */ {
+.wrapper_5dqHTG /* remove server list shadow */ {
     mask: none;
 }
 
-.chat_f75fb0 /* chat group outer */ {
+.chat_z_gUBg /* chat group outer */ {
     border: none !important;
     background: none;
 }
-.chatContent_f75fb0 {
+.chatContent_z_gUBg {
     overflow: hidden;
 }
-.container__133bf /* friends page group outer */,
-    .page__5e434 {
+.container_zrUwGA /* friends page group outer */,
+    .page_pog62O {
     padding-bottom: var(--gap);
     padding-right: var(--gap);
     border: none !important;
     background: none;
 }
-.page__5e434 > .chat_f75fb0,
-.page__5e434 > .container__133bf {
+.page_pog62O > .chat_z_gUBg,
+.page_pog62O > .container_zrUwGA {
     padding: 0;
 }
 
-#app-mount .container__9293f /* friends, message requests, + other stuff titlebar */ {
+#app-mount .container_ybUK7Z /* friends, message requests, + other stuff titlebar */ {
     margin-bottom: var(--gap);
     border-bottom: none;
 }
 
-.subtitleContainer_f75fb0 /* chat titlebar  */ {
+.subtitleContainer_z_gUBg /* chat titlebar  */ {
     margin-bottom: var(--gap);
 }
-.title_f75fb0 /* chat titlebar inner */ {
+.title_z_gUBg /* chat titlebar inner */ {
     border: none;
     background: none !important;
     margin-bottom: 0;
 }
 
-.page__5e434 > div > .chat_f75fb0 > .content_f75fb0 /* chat outer */ {
+.page_pog62O > div > .chat_z_gUBg > .content_z_gUBg /* chat outer */ {
     border-left: none;
 }
-.tabBody__133bf /* friends page */ {
+.tabBody_zrUwGA /* friends page */ {
     border: none !important;
 }
 
-.listeningAlong_e0cf27 /* user panel listening along */ {
+.listeningAlong_Zar2Rk /* user panel listening along */ {
     border-top: none !important;
 }
 
-.container_c8ffbb /* member list */ {
+.container_86es0b /* member list */ {
     margin-left: var(--gap);
     overflow: hidden;
     height: auto;
     min-width: fit-content;
 }
-.content_f75fb0 > .membersWrap_c8ffbb /* forum post member list */ {
+.content_z_gUBg > .membersWrap_86es0b /* forum post member list */ {
     margin-left: var(--gap);
     overflow: hidden;
     height: auto;
     min-width: fit-content;
 }
-.members_c8ffbb /* member list inner */,
-    .member_c8ffbb /* member list item */ {
+.members_86es0b /* member list inner */,
+    .member_86es0b /* member list item */ {
     background: none;
 }
 
-.resizeHandle__01ae2 /* resize handle */ {
+.resizeHandle_FrbQJp /* resize handle */ {
     background: transparent;
 }
 
-.privateChannels_e6b769 /* dm list */,
-    .scroller__99e7c /* dm list inner */ {
+.privateChannels_u88IQl /* dm list */,
+    .scroller_Bce46W /* dm list inner */ {
     background: none;
 }
-.scroller__99e7c /* dm list inner */ {
+.scroller_Bce46W /* dm list inner */ {
     margin-bottom: 0;
 }
 
-.tabBody__133bf /* online friends + active now group outer */ {
+.tabBody_zrUwGA /* online friends + active now group outer */ {
     background: none;
 }
 
-.nowPlayingColumn__133bf /* active now */ {
+.nowPlayingColumn_zrUwGA /* active now */ {
     margin-left: var(--gap);
 }
-.container__7d20c /* active now inner */ {
+.container_GNEh_C /* active now inner */ {
     background: none;
 }
-.scroller__7d20c /* active now inner */ {
+.scroller_GNEh_C /* active now inner */ {
     border: none;
 }
 
@@ -276,15 +276,15 @@ body {
     border: none;
     background: none;
 }
-.applicationStore_f07d62 /* nitro page group outer */ {
+.applicationStore_6U3jXZ /* nitro page group outer */ {
     background: none;
 }
 
-.shop__6db1d /* shop */ {
+.shop_Mqg79R /* shop */ {
     overflow: hidden;
     height: auto;
 }
-.shop__08415 /* shop inner scroller */ {
+.shop_XBXDcd /* shop inner scroller */ {
     margin-top: calc(var(--custom-channel-header-height) * -1 - 16px);
 }
 
@@ -297,7 +297,7 @@ body {
     background: none;
 }
 
-.content_f75fb0 > aside > .outer_c0bea0 /* dm user panel */ {
+.content_z_gUBg > aside > .outer_P1YEjQ /* dm user panel */ {
     margin-left: var(--gap);
     overflow: hidden;
     /* min-width: 340px; */
@@ -305,16 +305,16 @@ body {
     background-size: 100% calc(100% + 2 * var(--border-thickness));
 }
 
-.content_f75fb0 > aside > .outer_c0bea0 /* dm user panel */ {
+.content_z_gUBg > aside > .outer_P1YEjQ /* dm user panel */ {
     overflow: visible;
     margin-right: 0;
 }
 
-.searchResultsWrap_a98f3b /* search results */ {
+.searchResultsWrap_QHVbp3 /* search results */ {
     margin-left: var(--gap);
 }
 
-.notice__6e2b9 /* notice banner */,
+.notice_Q02kKo /* notice banner */,
 .notice__29487 /* nitro notice? */ {
     margin: 0 var(--gap) var(--gap) 0;
     border-radius: var(--radius-md);
@@ -322,58 +322,58 @@ body {
     height: 40px;
 }
 
-.container__01ae2 /* vc chat + titlebar group */ {
+.container_FrbQJp /* vc chat + titlebar group */ {
     border: none;
     background: none;
 }
 .chat_ee72fa::before /* VC / thread chat shadow */ {
     display: none;
 }
-.channelChatWrapper_cb9592 /* vc chat + titlebar group outer */ {
+.channelChatWrapper_hbKzX7 /* vc chat + titlebar group outer */ {
     background: none;
 }
 
-.page__5e434 > div > .chatLayerWrapper__01ae2 /* forum/thread chat outer */ {
+.page_pog62O > div > .chatLayerWrapper_FrbQJp /* forum/thread chat outer */ {
     margin: 0 var(--gap) var(--gap) 0;
     height: calc(100% - var(--gap));
 }
-.container__01ae2 /* forum/thread chat */ {
+.container_FrbQJp /* forum/thread chat */ {
     padding-left: calc((var(--gap) - var(--chat-resize-handle-width)));
 }
 
-.container_fb64c9 /* new thread panel */ {
+.container_UU236g /* new thread panel */ {
     background: none;
 }
-.chat_fb64c9::before /* new thread panel chat shadow */ {
+.chat_UU236g::before /* new thread panel chat shadow */ {
     display: none;
 }
 
 .container_a592e1 /* server discovery */ {
     overflow: hidden;
 }
-.backdrop__8a7fc /* server discovery top bar */ {
+.backdrop_Y0eJLL /* server discovery top bar */ {
     background-color: var(--background-base-lower);
 }
 
 /* DM / server VC containers */
-.wrapper_cb9592 {
+.wrapper_hbKzX7 {
     background: none;
 }
-.wrapper_cb9592.fullScreen_cb9592 {
+.wrapper_hbKzX7.fullScreen_hbKzX7 {
     margin-top: var(--gap);
     margin-left: var(--gap);
     width: calc(100% - var(--gap));
     height: calc(100% - var(--gap));
 
-    + div + div .container__01ae2 {
+    + div + div .container_FrbQJp {
         margin-top: var(--gap);
     }
 }
-.popout__0bd4a .content__0bd4a:has(> div > .wrapper_cb9592.fullScreen_cb9592) {
+.popout_9Aa-7R .content_9Aa-7R:has(> div > .wrapper_hbKzX7.fullScreen_hbKzX7) {
     margin-left: 0;
 }
 /* padding between dm vc and chat*/
-.wrapper_cb9592 ~ .content_f75fb0 {
+.wrapper_hbKzX7 ~ .content_z_gUBg {
     padding-top: var(--gap);
 }
 
@@ -383,35 +383,35 @@ body {
 }
 
 /* Apply gap to mod view container */
-.sidebarContainer__656be {
+.sidebarContainer_MLLsfk {
     margin-inline-start: var(--gap);
 }
 
 /* remove excess background from settings  */
-.standardSidebarView__23e6b,
-.contentRegion__23e6b,
-.contentRegionScroller__23e6b {
+.standardSidebarView_jnk11m,
+.contentRegion_jnk11m,
+.contentRegionScroller_jnk11m {
     background: none;
 }
-.standardSidebarView__23e6b {
+.standardSidebarView_jnk11m {
     backdrop-filter: var(--panel-backdrop-filter);
 }
 
 /* remove excess backgrounds */
 .wrapper_cdf8a9 /* message loading placeholders */,
-.wrapper_cdf8a9 > .wrapper_fc8177 {
+.wrapper_cdf8a9 > .wrapper_oITdBA {
     background: none;
 }
-.page__5e434 > .container__89463 /* server boosts page */,
-.page__5e434 > .chat_f75fb0 /* friend page, server members page */ {
+.page_pog62O > .container__89463 /* server boosts page */,
+.page_pog62O > .chat_z_gUBg /* friend page, server members page */ {
     background: none !important;
 }
-.titleBar__0bd4a /* VC popout titlebar */ {
+.titleBar_9Aa-7R /* VC popout titlebar */ {
     background: none;
 }
 
 /* channel messages bar */
-.barBase__0f481:not(.bottomBar__0f481) {
+.barBase_j9Vvzj:not(.bottomBar_HOJNvw) {
     top: 12px;
     left: 12px;
     right: 12px;
@@ -434,13 +434,13 @@ body {
     }
 }
 
-.bottom__7aaec /* channel list new unreads pill */,
-.unreadBottom__629e4 /* channel list non-community unread pill */ {
+.bottom_t1P8Sn /* channel list new unreads pill */,
+.unreadBottom_ysO7Gy /* channel list non-community unread pill */ {
     bottom: 0;
 }
 
-.unreadMentionsIndicatorBottom_ef3116 /* server list new pill */,
-.unreadMentionsIndicatorTop_ef3116 {
+.unreadMentionsIndicatorBottom_5dqHTG /* server list new pill */,
+.unreadMentionsIndicatorTop_5dqHTG {
     width: calc(var(--guildbar-avatar-size) + var(--custom-guild-list-padding) * 2);
     padding: calc(var(--custom-guild-list-padding) / 2);
 }
@@ -450,32 +450,32 @@ body {
 }
 
 /* general chat bar improvements */
-.channelTextArea_f75fb0 /* chat bar */ {
+.channelTextArea_z_gUBg /* chat bar */ {
     border-radius: var(--radius-md);
 }
-.form_f75fb0 .themedBackground__74017 /* chat bar inner */ {
+.form_z_gUBg .themedBackground_2x8-Qn /* chat bar inner */ {
     background: none;
 }
-.slateTextArea_ec4baf /* actual typing area */ {
+.slateTextArea_q99V_- /* actual typing area */ {
     margin-left: 2px;
 }
 
 /* improve unread divider */
-.divider__908e2 {
+.divider_4TfzT5 {
     border-width: var(--divider-thickness);
     border-radius: var(--divider-thickness);
 }
-.endCap__908e2 {
+.endCap_4TfzT5 {
     margin-top: calc(var(--divider-thickness) / -2);
 }
-.divider__908e2 .content__908e2 {
+.divider_4TfzT5 .content_4TfzT5 {
     margin-top: calc(var(--divider-thickness) - var(--divider-thickness) * 2);
 }
 
 /* improve highlight message left edge */
-.message__5126c.mentioned__5126c::before,
-.replying__5126c::before,
-.ephemeral__5126c::before {
+.message_SY_P2T.mentioned_SY_P2T::before,
+.replying_SY_P2T::before,
+.ephemeral_SY_P2T::before {
     width: var(--divider-thickness);
     border-radius: var(--divider-thickness);
     height: calc(100% - 2 * var(--radius-sm));
@@ -484,23 +484,23 @@ body {
     left: calc(var(--radius-sm) / 2);
 }
 
-.message__5126c {
+.message_SY_P2T {
     border-radius: var(--radius-md);
     margin-left: 4px;
 }
 
 /* improve server selected marker */
-.pill_e5445c.wrapper__58105 {
+.pill_IaPwK5.wrapper__o8_Xq {
     width: calc((var(--custom-guild-list-padding) - 4px) / 2 + 4px);
 }
-.item__58105 {
+.item__o8_Xq {
     width: 4px;
     border-radius: 4px;
     margin-left: calc((var(--custom-guild-list-padding) - 4px) / 2);
 }
 
 /* improve embeds */
-.embedFull__623de {
+.embedFull_XyW1ZT {
     border: 4px solid var(--border-normal);
     border-top-color: var(--border-subtle) !important;
     border-top-width: 1px;
@@ -517,35 +517,35 @@ body {
 }
 
 /* roundness */
-.embedFull__623de /* embeds */,
+.embedFull_XyW1ZT /* embeds */,
 .hljs /* code block */,
-.imageWrapper_af017a /* image */,
-.container__9271d /* thread link */ {
+.imageWrapper_W6wEGA /* image */,
+.container_g2fiji /* thread link */ {
     border-radius: var(--radius-md);
 }
 
-.outer_c0bea0 /* profile outer */,
-.contentWrapper__08434  /* gif panel */ {
+.outer_P1YEjQ /* profile outer */,
+.contentWrapper_58b0l2  /* gif panel */ {
     border-radius: var(--radius-lg) !important;
 }
-.inner_c0bea0 /* profile inner */ {
+.inner_P1YEjQ /* profile inner */ {
     border-radius: calc(var(--radius-lg) - 4px);
 }
 
-.outer_c0bea0 /* profile outer */ {
+.outer_P1YEjQ /* profile outer */ {
     border: 1px solid var(--border-subtle);
     background-position: center calc(-1 * var(--border-thickness));
     background-size: 100% calc(100% + 2 * var(--border-thickness));
 }
-.root__24502 {
+.root_NxZlvf {
     background: none;
 }
 
-.container__37e49 {
+.container_g6VwXp {
     margin-inline-start: 0;
     -webkit-margin-start: 0;
 }
-.container__37e49 .container_df39b2 /* nameplate */ {
+.container_g6VwXp .container_AFi54G /* nameplate */ {
     border-radius: var(--radius-lg);
     width: 100%;
     height: 100%;
@@ -554,17 +554,17 @@ body {
 }
 
 /* Fix screen share modal coloring and spacing */
-.container__8a031:has(> div > .footer_a55fdc) {
+.container_dvN-MP:has(> div > .footer_oszuaw) {
     padding-bottom: 0;
 
-    .sourceOverlayCTA__2f580 {
+    .sourceOverlayCTA_4HfQya {
         color: var(--text-3);
     }
 
-    .footer_a55fdc {
+    .footer_oszuaw {
         border-radius: 0 0 var(--radius-lg) var(--radius-lg);
 
-        .footerContent_a55fdc {
+        .footerContent_oszuaw {
             padding: var(--space-16) var(--space-24);
         }
     }
@@ -579,13 +579,13 @@ body {
 }
 
 /* keep the divider below the tags row within the bounds of the new forum post input box */
-.tagsDivider_d9be46 {
+.tagsDivider_owUmX8 {
     inset-inline-start: 0px;
     width: 100%;
 }
 
 /* remove unnecessary backgrounds */
-.app__160d8,
+.app_QbT-Jy,
 #app-mount,
 body {
     background: transparent !important;
@@ -612,23 +612,23 @@ body {
 
 @container body style(--animations: on) {
     /* list hover animations */
-    .wrapper__2ea32 .link__2ea32 /* channels */,
-        .container__91a9d /* members */,
-        .channel__972a0 /* dms */,
-        .side_aa8da2 .item_aa8da2 /* settings */ {
+    .wrapper_TNyK-N .link_TNyK-N /* channels */,
+        .container_J1Adu_ /* members */,
+        .channel_zln_tS /* dms */,
+        .side_6zZYhF .item_6zZYhF /* settings */ {
         transition: margin-left var(--list-item-transition);
         will-change: margin-left;
     }
-    .wrapper__2ea32:hover .link__2ea32,
-    .side_aa8da2 .item_aa8da2:hover {
+    .wrapper_TNyK-N:hover .link_TNyK-N,
+    .side_6zZYhF .item_6zZYhF:hover {
         margin-left: 10px;
     }
-    .container__91a9d:hover,
-    .channel__972a0:hover {
+    .container_J1Adu_:hover,
+    .channel_zln_tS:hover {
         margin-left: 18px;
     }
     /* list hover channel dot */
-    .unread__2ea32 {
+    .unread_TNyK-N {
         border-radius: 50%;
         width: 8px;
         height: 8px;
@@ -636,13 +636,13 @@ body {
         transition: var(--list-item-transition);
         will-change: margin-left;
     }
-    .wrapper__2ea32:hover .unread__2ea32 {
+    .wrapper_TNyK-N:hover .unread_TNyK-N {
         margin-left: 4px;
     }
-    .typeThread__2ea32 .unread__2ea32 {
+    .typeThread_TNyK-N .unread_TNyK-N {
         margin-left: -8px;
     }
-    .wrapper__2ea32.typeThread__2ea32:hover .unread__2ea32 {
+    .wrapper_TNyK-N.typeThread_TNyK-N:hover .unread_TNyK-N {
         margin-left: 0px;
     }
 }
@@ -659,7 +659,7 @@ body {
 }
 
 @container body style(--background-image: on) {
-    #app-mount .bg__960e4 {
+    #app-mount .bg_Fd0FEH {
         background: var(--background-image-url);
         background-size: cover;
         background-position: center;
@@ -679,7 +679,7 @@ body {
     initial-value: off;
 }
 
-.attachWrapper__0923f {
+.attachWrapper_7TM4SO {
     padding-top: 0;
     padding-bottom: 0;
     display: flex;
@@ -690,19 +690,19 @@ body {
     padding-top: 0;
     padding-bottom: 0;
 }
-.attachButton__74017 {
+.attachButton_2x8-Qn {
     display: flex;
     align-items: center;
 }
 
 @container body style(--custom-chatbar: separated) {
-    .chatContent_f75fb0 {
+    .chatContent_z_gUBg {
         background: none;
         border-radius: 0;
         border: none;
         backdrop-filter: none;
     }
-    .messagesWrapper__36d07 {
+    .messagesWrapper_8AE1Qq {
         background-color: var(--background-base-lower);
         border-radius: var(--radius-lg);
         border: var(--border-thickness) solid var(--border-subtle);
@@ -714,13 +714,13 @@ body {
             border-color: var(--border-hover);
         }
     }
-    .scrollerSpacer__36d07 {
+    .scrollerSpacer_8AE1Qq {
         height: calc(26px + var(--space-xs));
     }
-    .scroller__36d07::-webkit-scrollbar-track {
+    .scroller_8AE1Qq::-webkit-scrollbar-track {
         margin-bottom: calc(26px);
     }
-    .chatContent_f75fb0:has(> .form_f75fb0 > .typing_b88801) .messagesWrapper__36d07::before {
+    .chatContent_z_gUBg:has(> .form_z_gUBg > .typing_U9Tvvz) .messagesWrapper_8AE1Qq::before {
         content: '';
         position: absolute;
         bottom: 0;
@@ -731,14 +731,14 @@ body {
         border-radius: 0 0 var(--radius-lg) var(--radius-lg);
         z-index: 2;
     }
-    .form_f75fb0 {
+    .form_z_gUBg {
         display: flex;
         flex-direction: column;
         padding: 0;
         width: 100%;
         margin-top: 0;
     }
-    .typing_b88801 {
+    .typing_U9Tvvz {
         position: absolute;
         order: -1;
         top: calc(-26px + var(--border-thickness) * -1);
@@ -747,10 +747,10 @@ body {
         padding: 0 0 0 var(--space-sm);
         height: 26px;
     }
-    .channelBottomBarArea_f75fb0 {
+    .channelBottomBarArea_z_gUBg {
         margin-top: var(--gap);
     }
-    #app-mount .channelTextArea_f75fb0 {
+    #app-mount .channelTextArea_z_gUBg {
         margin: 0;
         background-color: var(--background-base-lower);
         border-radius: var(--radius-lg);
@@ -762,10 +762,10 @@ body {
             border-color: var(--border-hover);
         }
     }
-    .stackedBars__74017 {
+    .stackedBars_2x8-Qn {
         background: none !important;
     }
-    .wrapper__44df5 {
+    .wrapper_ST_Y69 {
         margin: var(--gap) 0 0 0;
         height: var(--chatbar-height);
         padding: 0;
@@ -1379,7 +1379,7 @@ body {
     }
 
     /* User profile sidebar */
-    .user-profile-sidebar .inner_c0bea0 {
+    .user-profile-sidebar .inner_P1YEjQ {
         --user-profile-overlay-background: var(--bg-3);
         --profile-gradient-secondary-color: var(--bg-4);
     }
@@ -1388,33 +1388,33 @@ body {
         color: var(--text-5);
     }
 
-    .bg__960e4 /* main background */ {
+    .bg_Fd0FEH /* main background */ {
         background: var(--bg-3);
     }
 
-    .clickable__9293f .icon__9293f /* main top bar icons */,
+    .clickable_ybUK7Z .icon_ybUK7Z /* main top bar icons */,
     .clickable__81391 {
         color: var(--text-4);
     }
-    .clickable__9293f:hover .icon__9293f {
+    .clickable_ybUK7Z:hover .icon_ybUK7Z {
         color: var(--text-3);
     }
 
-    .modeUnreadImportant__2ea32 .icon__2ea32,
-    .wrapper__2ea32:hover .icon__2ea32 /* correct channel icon color */ {
+    .modeUnreadImportant_TNyK-N .icon_TNyK-N,
+    .wrapper_TNyK-N:hover .icon_TNyK-N /* correct channel icon color */ {
         color: var(--text-3);
     }
 
-    .text_b88801 > strong /* xxx is typing.. */ {
+    .text_U9Tvvz > strong /* xxx is typing.. */ {
         color: var(--text-3);
     }
 
-    .hiddenVisually_b18fe2[aria-expanded="false"] > .folderPreviewWrapper__48112 /* collapsed folders */ {
+    .hiddenVisually_FX8kaC[aria-expanded="false"] > .folderPreviewWrapper_RTMSuZ /* collapsed folders */ {
         --background-primary: var(--bg-3);
     }
 
-    .panel__5dec7 /* game activity panel */,
-        .container__722ff /* background between vc and vc chat */ {
+    .panel_8eCwJY /* game activity panel */,
+        .container_DwQMm_ /* background between vc and vc chat */ {
         background: none;
     }
 
@@ -1424,245 +1424,245 @@ body {
         background-color: transparent !important;
     }
 
-    .sidebarRegionScroller__23e6b /* server and channel settings sidebar */ {
+    .sidebarRegionScroller_jnk11m /* server and channel settings sidebar */ {
         background-color: var(--bg-3);
     }
-    .side_aa8da2 .item_aa8da2:hover /* settings tab */ {
+    .side_6zZYhF .item_6zZYhF:hover /* settings tab */ {
         background-color: var(--bg-3) !important;
     }
-    .side_aa8da2 .item_aa8da2:active,
-    .side_aa8da2 .item_aa8da2.selected_aa8da2 {
+    .side_6zZYhF .item_6zZYhF:active,
+    .side_6zZYhF .item_6zZYhF.selected_6zZYhF {
         background-color: var(--bg-2) !important;
     }
 
-    .quickSelectPopout_ebaca5 /* dm vc region select popout */,
-    .participantsButton__211d1 /* vc participants button */,
-    .voiceBar__7aaec /* n in voice bar (channel list) */,
-    .mainCard_f369db /* form posts */,
-    .accountProfileCard_a9178b /* account settings profile background */ {
+    .quickSelectPopout_ohxi6x /* dm vc region select popout */,
+    .participantsButton_1uD6uZ /* vc participants button */,
+    .voiceBar_t1P8Sn /* n in voice bar (channel list) */,
+    .mainCard_BkGrJJ /* form posts */,
+    .accountProfileCard_jPuNMC /* account settings profile background */ {
         background-color: var(--bg-3);
     }
 
-    .colorable_f1ceac.primaryDark_f1ceac,
+    .colorable_K9Xq13.primaryDark_K9Xq13,
         .reaction_f8896c /* forum post reaction */ {
         background-color: var(--bg-2);
     }
 
-    .expandedFolderIconWrapper__48112 > svg[style="color: rgb(88, 101, 242);"] /* folder icon */ {
+    .expandedFolderIconWrapper_RTMSuZ > svg[style="color: rgb(88, 101, 242);"] /* folder icon */ {
         color: var(--accent-2) !important;
     }
-    .colorPickerSwatch__459fb[style="background-color: rgb(88, 101, 242);"] /* folder color picker swatch */,
-        .newBadge_faa96b /* forum post new badge */,
-        .mentioned__5126c:before /* mention message left edge */ {
+    .colorPickerSwatch_BorJ2C[style="background-color: rgb(88, 101, 242);"] /* folder color picker swatch */,
+        .newBadge_SOY5H6 /* forum post new badge */,
+        .mentioned_SY_P2T:before /* mention message left edge */ {
         background-color: var(--accent-2) !important;
     }
-    .replying__5126c:before /* reply message left edge */ {
+    .replying_SY_P2T:before /* reply message left edge */ {
         background-color: var(--text-2) !important;
     }
 
-    .badge_c3d04b /* shop "orbs exclusive" badge */ {
+    .badge_lmQhFf /* shop "orbs exclusive" badge */ {
         background-color: var(--text-1);
     }
 
-    #app-mount .message__5126c.replying__5126c:hover /* override fix for message reply hover */ {
+    #app-mount .message_SY_P2T.replying_SY_P2T:hover /* override fix for message reply hover */ {
         background: var(--reply-hover);
     }
 
-    .voiceBar__7aaec .barText__7aaec, .voiceChannelsIcon__7aaec /* x in voice bar text */,
-    .activeButtonChild_aa63ab /* message bar send button icon */,
-    #app-mount .button_aa63ab:hover .activeButtonChild_aa63ab {
+    .voiceBar_t1P8Sn .barText_t1P8Sn, .voiceChannelsIcon_t1P8Sn /* x in voice bar text */,
+    .activeButtonChild_plpOf8 /* message bar send button icon */,
+    #app-mount .button_plpOf8:hover .activeButtonChild_plpOf8 {
         color: var(--accent-2);
     }
 
-    .ephemeral__5126c /* ephemeral messages */ {
+    .ephemeral_SY_P2T /* ephemeral messages */ {
         background: var(--mention) !important;
     }
-    .ephemeral__5126c:hover {
+    .ephemeral_SY_P2T:hover {
         background: var(--mention-hover) !important;
     }
 
-    .botTagRegular__82f07 /* bot tag */ {
+    .botTagRegular_feVUtO /* bot tag */ {
         background-color: var(--accent-2);
     }
-    .botTagOP__82f07 /* forum post op tag */ {
+    .botTagOP_feVUtO /* forum post op tag */ {
         color: var(--text-0);
     }
 
-    .productCardBadge_b8a6bd {
+    .productCardBadge_Ruy7qb {
         background-color: var(--bg-2) !important;
         color: var(--text-3) !important;
     }
 
-    #app-mount .addFriend__133bf:hover /* add friend button hover */ {
+    #app-mount .addFriend_zrUwGA:hover /* add friend button hover */ {
         color: var(--text-0);
     }
-    #app-mount .addFriend__133bf[aria-selected=true] /* add friend button selected */ {
+    #app-mount .addFriend_zrUwGA[aria-selected=true] /* add friend button selected */ {
         background-color: var(--accent-5) !important;
         color: var(--text-0);
     }
 
-    .container__3f21e /* settings checkbutton background */,
+    .container_isqatr /* settings checkbutton background */,
     .vc-switch-container {
         background-color: var(--bg-1) !important;
         transition: background-color 0.2s ease;
     }
-    .container__3f21e.checked__3f21e /* settings checkbutton background */,
+    .container_isqatr.checked_isqatr /* settings checkbutton background */,
     .vc-switch-container.vc-switch-checked {
         background-color: var(--accent-2) !important;
     }
-    .container__3f21e .slider__3f21e > svg > path /* settings checkbutton check */,
+    .container_isqatr .slider_isqatr > svg > path /* settings checkbutton check */,
     .vc-switch-container .vc-switch-slider > svg > path {
         fill: var(--bg-1) !important;
         transition: fill 0.2s ease;
     }
-    .container__3f21e.checked__3f21e .slider__3f21e > svg > path /* settings checkbutton check */,
+    .container_isqatr.checked_isqatr .slider_isqatr > svg > path /* settings checkbutton check */,
     .vc-switch-container.vc-switch-checked .vc-switch-slider > svg > path {
         fill: var(--accent-2) !important;
     }
-    .container__3f21e rect[fill='white'] /* settings checkbutton slider */,
+    .container_isqatr rect[fill='white'] /* settings checkbutton slider */,
     .vc-switch-container .vc-switch-slider rect[fill='white'] {
         fill: var(--text-3) !important;
         transition: fill 0.2s ease;
     }
-    .container__3f21e.checked__3f21e rect[fill='white'] /* settings checkbutton slider */,
+    .container_isqatr.checked_isqatr rect[fill='white'] /* settings checkbutton slider */,
     .vc-switch-container.vc-switch-checked .vc-switch-slider rect[fill='white'] {
         fill: var(--text-0) !important;
     }
 
-    .refreshIcon__88a69 /* settings radiobutton center */ {
+    .refreshIcon_jqZBm0 /* settings radiobutton center */ {
         fill: var(--text-0);
     }
 
-    .categoryText_d02962 /* gif chooser category names */,
+    .categoryText_d2GpC2 /* gif chooser category names */,
         .bannerColor_fb7f94 /* profile banner button */,
-        .backButton_e4cb9a /* stream preview back button */,
-        .viewersIcon_d6b206 /* stream preview viewers icon */,
-        .bottomControls_e4cb9a /* stream preview viewer number */,
-        .pictureInPictureVideo_e4cb9a .controlIcon_f1ceac /* stream preview control icon */,
-        .bannerVisible_f37cb1 .name_f37cb1 /* server name over banner image */,
-        .dropdownButtonBannerVisible__2637a /* server name over banner dropdown button */,
-        .mediaMosaicAltText__0f481 /* image alt text label */,
+        .backButton_qOjco6 /* stream preview back button */,
+        .viewersIcon_Xa_Vtp /* stream preview viewers icon */,
+        .bottomControls_qOjco6 /* stream preview viewer number */,
+        .pictureInPictureVideo_qOjco6 .controlIcon_K9Xq13 /* stream preview control icon */,
+        .bannerVisible_XH4OpX .name_XH4OpX /* server name over banner image */,
+        .dropdownButtonBannerVisible_H5ozaj /* server name over banner dropdown button */,
+        .mediaMosaicAltText_j9Vvzj /* image alt text label */,
         .bannerButton_fb7f94 /* profile banner corner buttons */,
-        .embed__98ba8 /* embed primary text */ {
+        .embed_v5eeZH /* embed primary text */ {
         color: var(--text-1);
     }
-    .headerText_e4cb9a.base_eb1a4c /* stream preview header text */,
-        .participantName__2cdb8 /* stream preview participant name */ {
+    .headerText_qOjco6.base_eb1a4c /* stream preview header text */,
+        .participantName_ScIiLS /* stream preview participant name */ {
         color: var(--text-1) !important;
     }
-    .playPausePopIcon_cf09d8 > path /* video play/pause popup */,
-    .normalIconColor__979b1 /* shop favorite button icon */ {
+    .playPausePopIcon_FJ99sr > path /* video play/pause popup */,
+    .normalIconColor_M2FQyv /* shop favorite button icon */ {
         fill: var(--text-1);
     }
-    .headerTitle_e4cb9a:hover /* stream preview header title hover underline */ {
+    .headerTitle_qOjco6:hover /* stream preview header title hover underline */ {
         border-color: var(--text-1) !important;
     }
-    .controlIcon_cf09d8 /* video play button */,
-        .wrapper_cf09d8 /* video time */,
-        .iconWrapper__6eb54 /* video initial play button */,
-        .wrapper__926d7 /* youtube embed play button */,
-        .viewersIcon_d6b206:hover /* stream preview viewers icon */ ,
-        .headerTitle_e4cb9a:hover .backButton_e4cb9a /* stream preview back button hover */,
-        .viewersIcon_d6b206:hover /* stream preview viewers icon */,
-        .pictureInPictureVideo_e4cb9a .controlIcon_f1ceac:hover /* stream preview control icon */ {
+    .controlIcon_FJ99sr /* video play button */,
+        .wrapper_FJ99sr /* video time */,
+        .iconWrapper_ifLhOx /* video initial play button */,
+        .wrapper_lj7V-K /* youtube embed play button */,
+        .viewersIcon_Xa_Vtp:hover /* stream preview viewers icon */ ,
+        .headerTitle_qOjco6:hover .backButton_qOjco6 /* stream preview back button hover */,
+        .viewersIcon_Xa_Vtp:hover /* stream preview viewers icon */,
+        .pictureInPictureVideo_qOjco6 .controlIcon_K9Xq13:hover /* stream preview control icon */ {
         color: var(--text-2);
     }
-    .wrapper__926d7 a:link,
-        .wrapper__926d7 a:visited,
-        .headerTitle_e4cb9a:hover .headerText_e4cb9a.base_eb1a4c /* stream preview back button hover */ {
+    .wrapper_lj7V-K a:link,
+        .wrapper_lj7V-K a:visited,
+        .headerTitle_qOjco6:hover .headerText_qOjco6.base_eb1a4c /* stream preview back button hover */ {
         color: var(--text-2) !important;
     }
-    .downloadHoverButtonIcon__6c706 /* video download button */,
-    .iconContainer__211d1>svg /* vc participants button icon */,
-    .selectedIcon__2f4f7 /* vc selected camera icon */,
-    .colorable_f1ceac.primaryDark_f1ceac .centerIcon_f1ceac /* vc icon button */,
-    .colorable_f1ceac.primaryDark_f1ceac /* vc icon button nub */,
-    .iconBadge__650eb.base__463b7 /* server vc badge */,
+    .downloadHoverButtonIcon_BwHv05 /* video download button */,
+    .iconContainer_1uD6uZ>svg /* vc participants button icon */,
+    .selectedIcon_7NOr2f /* vc selected camera icon */,
+    .colorable_K9Xq13.primaryDark_K9Xq13 .centerIcon_K9Xq13 /* vc icon button */,
+    .colorable_K9Xq13.primaryDark_K9Xq13 /* vc icon button nub */,
+    .iconBadge_rwEpIL.base_lMvXrQ /* server vc badge */,
     #app-mount .akaBadge__488b1 /* aka badge */,
-    #app-mount .message__9a9f9 /* you have unsaved settings message */,
-    .friendRequestsButton__523aa .base__463b7 /* inbox friend request number */,
-    .tooltipBlack__382e7 /* server boost tooltip */,
-    .colorable_f1ceac.primaryDark_f1ceac, .colorable_f1ceac.primaryDark_f1ceac .centerIcon_f1ceac /* vc buttons */,
+    #app-mount .message_aTnRjo /* you have unsaved settings message */,
+    .friendRequestsButton_QwUPp6 .base_lMvXrQ /* inbox friend request number */,
+    .tooltipBlack_3_v8qp /* server boost tooltip */,
+    .colorable_K9Xq13.primaryDark_K9Xq13, .colorable_K9Xq13.primaryDark_K9Xq13 .centerIcon_K9Xq13 /* vc buttons */,
     .item_caf372.active_caf372 /* settings items active */,
-    .interactive__972a0.interactiveSelected__972a0 /* dms list items active */,
-    .controlIcon_cf09d8:hover /* video play button hover */ {
+    .interactive_zln_tS.interactiveSelected_zln_tS /* dms list items active */,
+    .controlIcon_FJ99sr:hover /* video play button hover */ {
         color: var(--text-3);
     }
-    .status__2f4f7 path[fill='var(--white)'],
-        .emptyChannelIcon__00de6 path[fill='var(--white)'] /* channel start icon */ {
+    .status_7NOr2f path[fill='var(--white)'],
+        .emptyChannelIcon_w6h4R2 path[fill='var(--white)'] /* channel start icon */ {
         fill: var(--text-3);
     }
-    .grabber_a562c8 /* vc volume slider grabber */ {
+    .grabber_p3RiOL /* vc volume slider grabber */ {
         background-color: var(--text-3);
     }
-    .textBadge__463b7 /* new text badge (right click on person in vc) */ {
+    .textBadge_lMvXrQ /* new text badge (right click on person in vc) */ {
         color: var(--text-0);
     }
-    .textBadge__463b7[style='background-color: var(--primary-500);'] /* vc stream quality badge */ {
+    .textBadge_lMvXrQ[style='background-color: var(--primary-500);'] /* vc stream quality badge */ {
         background-color: var(--bg-2) !important;
         --white-500: var(--text-3);
     }
-    .akaPopoverBadge_f75fb0 /* dm vc user hover AKA badge */,
-    .qualityIndicatorFullQuality__30845 {
+    .akaPopoverBadge_z_gUBg /* dm vc user hover AKA badge */,
+    .qualityIndicatorFullQuality__be5Bx {
         color: var(--text-3);
     }
 
-    .unread__3b95d /* new unreads bar (channel list */,
+    .unread_oJAkDB /* new unreads bar (channel list */,
         .item_caf372 /* settings items */,
-        .interactive__972a0 /* dms list items */ {
+        .interactive_zln_tS /* dms list items */ {
         color: var(--text-4);
     }
 
-    .colorable_f1ceac.white_f1ceac /* vc icon button nub when white */ {
+    .colorable_K9Xq13.white_K9Xq13 /* vc icon button nub when white */ {
         background-color: var(--primary-130);
         color: var(--bg-4);
     }
 
-    .iconBadge__650eb.isCurrentUserConnected__650eb /* green vc badge when connected */ {
+    .iconBadge_rwEpIL.isCurrentUserConnected_rwEpIL /* green vc badge when connected */ {
         color: var(--text-0);
     }
 
-    .lookOutlined__201d5.colorWhite__201d5 /* outline buttons */ {
+    .lookOutlined_9OQtot.colorWhite_9OQtot /* outline buttons */ {
         border-color: var(--text-5);
         color: var(--text-3);
     }
 
-    .container__37e49 /* user panel buttons */,
-        .numberBadge__463b7  /* unread number badge */,
-        .toolbar__9293f /* toolbar button strikethroughs */ {
+    .container_g6VwXp /* user panel buttons */,
+        .numberBadge_lMvXrQ  /* unread number badge */,
+        .toolbar_ybUK7Z /* toolbar button strikethroughs */ {
         --status-danger: var(--accent-new);
     }
 
-    .container__37e49 .button__67645.redGlow__67645 /* user panel button backgrounds*/ {
+    .container_g6VwXp .button_Y-8oZW.redGlow_Y-8oZW /* user panel button backgrounds*/ {
         background-color: color-mix(in hsl, var(--accent-new), transparent 90%);
     }
-    .container__37e49 .button__67645.enabled__67645.redGlow__67645:hover /* user panel button backgrounds hover */ {
+    .container_g6VwXp .button_Y-8oZW.enabled_Y-8oZW.redGlow_Y-8oZW:hover /* user panel button backgrounds hover */ {
         background-color: color-mix(in hsl, var(--accent-new), transparent 80%);
     }
 
-    .divider__5126c /* unread divider */ {
+    .divider_SY_P2T /* unread divider */ {
         --divider-color: var(--accent-new);
     }
 
-    .icon_c1e9c4 > circle[fill="#C12A35"] /* server settings icon badge */ {
+    .icon_M3qk4j > circle[fill="#C12A35"] /* server settings icon badge */ {
         fill: var(--accent-new) !important;
     }
 
-    .iconBadge__9293f /* icon badge */,
-        .mentionsBar__7aaec /* new mention pill */,
-        .mention__3b95d /* server list new mention pill */,
+    .iconBadge_ybUK7Z /* icon badge */,
+        .mentionsBar_t1P8Sn /* new mention pill */,
+        .mention_oJAkDB /* server list new mention pill */,
         .badge_c99c29 /* inbox badge */ {
         background-color: var(--accent-new);
     }
 
-    .mention__3b95d:active {
+    .mention_oJAkDB:active {
         background-color: color-mix(in hsl, var(--accent-new), black 10%);
     }
 
-    .newMessagesBar__0f481 /* unread bar */ {
+    .newMessagesBar_j9Vvzj /* unread bar */ {
         background-color: var(--accent-3);
     }
-    .barButtonAlt__0f481 /* unread bar mark as read button */ {
+    .barButtonAlt_j9Vvzj /* unread bar mark as read button */ {
         --control-secondary-background-default: var(--accent-3);
         --control-secondary-background-hover: var(--accent-4);
     }
@@ -1671,36 +1671,36 @@ body {
         fill: var(--green-1);
     }
 
-    .colorable_f1ceac.red_f1ceac:hover /* vc disconnect button hover */ {
+    .colorable_K9Xq13.red_K9Xq13:hover /* vc disconnect button hover */ {
         background-color: var(--red-4);
     }
-    .button_f7ecac.dangerous_f7ecac:hover /* image attachment delete button hover in chat bar */ {
+    .button_Z0MHyc.dangerous_Z0MHyc:hover /* image attachment delete button hover in chat bar */ {
         color: var(--red-4);
     }
-    .contentWrapper__08434 ::-webkit-scrollbar-thumb /* gif picker scrollbar */ {
+    .contentWrapper_58b0l2 ::-webkit-scrollbar-thumb /* gif picker scrollbar */ {
         background-color: var(--bg-1);
     }
 
-    .circleIconButton__5bc7e /* new server button */ {
+    .circleIconButton_g8YUxD /* new server button */ {
         color: var(--text-3);
     }
-    .circleIconButton__5bc7e:hover {
+    .circleIconButton_g8YUxD:hover {
         color: var(--bg-4);
     }
 
-    .tooltipGrey_c36707 /* spotify plugin time tooltip */ {
+    .tooltipGrey_3_v8qp /* spotify plugin time tooltip */ {
         color: var(--text-3);
         background-color: var(--bg-3);
     }
 
-    .textContentFooter__9a337 /* forum post image fade */ {
+    .textContentFooter_x1LvFB /* forum post image fade */ {
         background: linear-gradient(0deg, var(--bg-4), transparent);
     }
 
-    .result__2dc39:after /* remove gif hover overlay */ {
+    .result_H8nOze:after /* remove gif hover overlay */ {
         display: none;
     }
-    .result__2dc39:hover /* gif hover */ {
+    .result_H8nOze:hover /* gif hover */ {
         outline: 2px solid var(--accent-2);
     }
 
@@ -1720,7 +1720,7 @@ body {
     rect[fill='#84858d'] {
         fill: var(--offline);
     }
-    .status_a423bd[style='background-color: rgb(132, 133, 141);'] {
+    .status_PlwcO5[style='background-color: rgb(132, 133, 141);'] {
         background-color: var(--offline) !important;
     }
     rect[fill='#45a366'],
@@ -1729,21 +1729,21 @@ body {
         .vc-platform-indicator > svg[fill="#45a366"] {
         fill: var(--online);
     }
-    .status_a423bd[style='background-color: rgb(69, 163, 102);'] {
+    .status_PlwcO5[style='background-color: rgb(69, 163, 102);'] {
         background-color: var(--online) !important;
     }
     rect[fill='#ffc04e'],
     .vc-platform-indicator > svg[fill='#ffc04e'] {
         fill: var(--idle);
     }
-    .status_a423bd[style='background-color: rgb(255, 192, 78);'] {
+    .status_PlwcO5[style='background-color: rgb(255, 192, 78);'] {
         background-color: var(--idle) !important;
     }
     rect[fill='#da3e44'],
     .vc-platform-indicator > svg[fill='#da3e44'] {
         fill: var(--dnd);
     }
-    .status_a423bd[style='background-color: rgb(218, 62, 68);'] {
+    .status_PlwcO5[style='background-color: rgb(218, 62, 68);'] {
         background-color: var(--dnd) !important;
     }
     rect[fill='#9147ff'] {
@@ -1754,13 +1754,13 @@ body {
     }
 
     /* fix radio bar button colors */
-    .radioBar__88a69[style='--radio-bar-accent-color: var(--yellow-360); padding: 10px;'] {
+    .radioBar_jqZBm0[style='--radio-bar-accent-color: var(--yellow-360); padding: 10px;'] {
         --radio-bar-accent-color: var(--yellow-2) !important;
     }
-    .radioBar__88a69[style='--radio-bar-accent-color: var(--green-360); padding: 10px;'] {
+    .radioBar_jqZBm0[style='--radio-bar-accent-color: var(--green-360); padding: 10px;'] {
         --radio-bar-accent-color: var(--green-2) !important;
     }
-    .radioBar__88a69[style='--radio-bar-accent-color: var(--red-400); padding: 10px;'] {
+    .radioBar_jqZBm0[style='--radio-bar-accent-color: var(--red-400); padding: 10px;'] {
         --radio-bar-accent-color: var(--red-2) !important;
     }
 
@@ -1768,11 +1768,11 @@ body {
         --vc-spotify-green: var(--accent-2);
     }
 
-    .vcd-screen-picker-option-radio[data-checked='true'] .defaultColor__4bd52 {
+    .vcd-screen-picker-option-radio[data-checked='true'] .defaultColor_MMUIw6 {
         color: var(--text-0);
     }
 
-    .memberRowContainer__71c22.memberSelected__71c22 td {
+    .memberRowContainer_DC2Jmc.memberSelected_DC2Jmc td {
         background: var(--bg-3);
     }
 
@@ -1782,7 +1782,7 @@ body {
         color: var(--text-0);
     }
 
-    .switchIndicator_a28278 {
+    .switchIndicator_9AraPt {
         transition: 0.2s ease;
         border: 1px solid var(--border-light) !important;
 
@@ -1790,7 +1790,7 @@ body {
         &[style^='opacity: 1; background-color: rgba(0, 0, 0, 0.12)'] {
             background-color: var(--bg-3) !important;
 
-            .thumb_a28278 > rect {
+            .thumb_9AraPt > rect {
                 fill: var(--text-3) !important;
             }
         }
@@ -1814,36 +1814,36 @@ body {
         /* Clicked state. Keyed on the switch container's :active state: the previous
            :has(> svg:not([style])) / :has(rect:not([height])) form made Chromium restyle the whole
            app on every inline style write (VU meters, speaking glows), ~100 ms each. */
-        .container_a28278:active & {
+        .container_9AraPt:active & {
             background-color: var(--accent-5) !important;
         }
 
-        .container_a28278:active & .thumb_a28278 > svg path {
+        .container_9AraPt:active & .thumb_9AraPt > svg path {
             fill: var(--accent-2);
         }
 
-        .thumb_a28278 > rect {
+        .thumb_9AraPt > rect {
             transition: 0.2s ease;
             fill: var(--bg-4) !important;
         }
     }
 
-    .selectedPill__1464f {
+    .selectedPill_T14dfz {
         border-color: var(--accent-2) !important;
     }
 
     /* Follow channel footer */
-    .wrapper__44df5 {
+    .wrapper_ST_Y69 {
         background-color: var(--bg-3);
     }
 
     /* VC popout background */
-    #app-mount .popout__0bd4a {
+    #app-mount .popout_9Aa-7R {
         background-color: var(--bg-3);
     }
 
-    .colorable_f1ceac.primaryDark_f1ceac.active_f1ceac:not(.disabled_f1ceac),
-    .colorable_f1ceac.primaryDark_f1ceac:hover:not(.disabled_f1ceac) {
+    .colorable_K9Xq13.primaryDark_K9Xq13.active_K9Xq13:not(.disabled_K9Xq13),
+    .colorable_K9Xq13.primaryDark_K9Xq13:hover:not(.disabled_K9Xq13) {
         background-color: var(--bg-1);
     }
 }
@@ -1866,20 +1866,20 @@ body {
 }
 
 @container body style(--custom-dms-icon: off) {
-    .wrapper__6e9f8[data-list-item-id='guildsnav___home'] > .childWrapper__6e9f8 {
+    .wrapper_JJ-hgR[data-list-item-id='guildsnav___home'] > .childWrapper_JJ-hgR {
         color: var(--dms-icon-color-before);
     }
-    .wrapper__6e9f8[data-list-item-id='guildsnav___home']:hover > .childWrapper__6e9f8,
-    .wrapper__6e9f8[data-list-item-id='guildsnav___home'].selected__6e9f8 > .childWrapper__6e9f8 {
+    .wrapper_JJ-hgR[data-list-item-id='guildsnav___home']:hover > .childWrapper_JJ-hgR,
+    .wrapper_JJ-hgR[data-list-item-id='guildsnav___home'].selected_JJ-hgR > .childWrapper_JJ-hgR {
         color: var(--dms-icon-color-after);
     }
 }
 
 @container body style(--custom-dms-icon: custom) {
-    .wrapper__6e9f8[data-list-item-id='guildsnav___home'] > .childWrapper__6e9f8 > svg {
+    .wrapper_JJ-hgR[data-list-item-id='guildsnav___home'] > .childWrapper_JJ-hgR > svg {
         display: none;
     }
-    .wrapper__6e9f8[data-list-item-id='guildsnav___home'] > .childWrapper__6e9f8::before {
+    .wrapper_JJ-hgR[data-list-item-id='guildsnav___home'] > .childWrapper_JJ-hgR::before {
         content: '';
         display: block;
         position: absolute;
@@ -1892,17 +1892,17 @@ body {
         mask-repeat: no-repeat;
         transition: background-color 0.15s ease-out;
     }
-    .wrapper__6e9f8[data-list-item-id='guildsnav___home']:hover > .childWrapper__6e9f8::before {
+    .wrapper_JJ-hgR[data-list-item-id='guildsnav___home']:hover > .childWrapper_JJ-hgR::before {
         transform: rotate(0deg) scale(1);
     }
-    .wrapper__6e9f8[data-list-item-id='guildsnav___home']:hover > .childWrapper__6e9f8::before,
-    .wrapper__6e9f8[data-list-item-id='guildsnav___home'].selected__6e9f8 > .childWrapper__6e9f8::before {
+    .wrapper_JJ-hgR[data-list-item-id='guildsnav___home']:hover > .childWrapper_JJ-hgR::before,
+    .wrapper_JJ-hgR[data-list-item-id='guildsnav___home'].selected_JJ-hgR > .childWrapper_JJ-hgR::before {
         background: var(--dms-icon-color-after);
         transform: rotate(-360deg) scale(0.8);
     }
 
     @container body style(--animations: on) {
-        .wrapper__6e9f8[data-list-item-id='guildsnav___home'] .childWrapper__6e9f8::before {
+        .wrapper_JJ-hgR[data-list-item-id='guildsnav___home'] .childWrapper_JJ-hgR::before {
             transition:
                 background-color 0.15s ease-out,
                 transform var(--dms-icon-svg-transition);
@@ -1911,7 +1911,7 @@ body {
 }
 
 @container body style(--custom-dms-icon: hide) {
-    .wrapper__6e9f8[data-list-item-id='guildsnav___home'] > .childWrapper__6e9f8 > svg {
+    .wrapper_JJ-hgR[data-list-item-id='guildsnav___home'] > .childWrapper_JJ-hgR > svg {
         display: none;
     }
 }
@@ -1923,7 +1923,7 @@ body {
 }
 
 @container body style(--custom-dms-background: image) {
-    .wrapper__6e9f8[data-list-item-id='guildsnav___home'] > .childWrapper__6e9f8 {
+    .wrapper_JJ-hgR[data-list-item-id='guildsnav___home'] > .childWrapper_JJ-hgR {
         background-image: var(--dms-background-image-url);
         background-color: transparent !important;
         background-size: var(--dms-background-image-size);
@@ -1933,7 +1933,7 @@ body {
 }
 
 @container body style(--custom-dms-background: color) {
-    .wrapper__6e9f8[data-list-item-id='guildsnav___home'] > .childWrapper__6e9f8 {
+    .wrapper_JJ-hgR[data-list-item-id='guildsnav___home'] > .childWrapper_JJ-hgR {
         background: var(--dms-background-color);
     }
 }
@@ -1953,22 +1953,22 @@ body {
     initial-value: titlebar;
 }
 
-.platform-osx .wrapper_ef3116 {
+.platform-osx .wrapper_5dqHTG {
     margin-top: max(0px, calc(36px - var(--top-bar-height)));
 }
 
 @container body style(--top-bar-button-position: hide) {
-    .trailing_c38106 > a[href='https://support.discord.com'],
+    .trailing_3zSH5d > a[href='https://support.discord.com'],
     .recentsIcon_c99c29,
-    .winButtons_c38106::before {
+    .winButtons_3zSH5d::before {
         display: none;
     }
 }
 
 @container body style(--top-bar-button-position: serverlist) {
     /* remove help button */
-    .trailing_c38106 > a[href='https://support.discord.com'],
-    .winButtons_c38106::before {
+    .trailing_3zSH5d > a[href='https://support.discord.com'],
+    .winButtons_3zSH5d::before {
         display: none;
     }
 
@@ -1978,7 +1978,7 @@ body {
         scrollbar-width: none;
     }
     /* create space for inbox button */
-    .tutorialContainer__1f388 {
+    .tutorialContainer_1IyMuq {
         margin-bottom: 48px;
     }
     /* move inbox button */
@@ -2000,7 +2000,7 @@ body {
         &:hover {
             background-color: var(--bg-brand);
 
-            .icon__9293f {
+            .icon_ybUK7Z {
                 color: var(--white);
             }
         }
@@ -2011,26 +2011,26 @@ body {
         height: 24px;
     }
     /* shift inbox popup panel into view */
-    .recentMentionsPopout__95796 {
+    .recentMentionsPopout_fXYEi6 {
         transform: translateX(100%);
     }
     /* fix settings animation transform */
-    .layer__960e4.baseLayer__960e4 {
+    .layer_Fd0FEH.baseLayer_Fd0FEH {
         transform: none !important;
     }
-    .layers__960e4 > .layer__960e4.animating__960e4 {
+    .layers_Fd0FEH > .layer_Fd0FEH.animating_Fd0FEH {
         will-change: opacity;
     }
 
     /* unread icon */
-    .recentsIcon_c99c29 .iconBadge__9293f {
+    .recentsIcon_c99c29 .iconBadge_ybUK7Z {
         --custom-icon-offset: 8px;
         width: 10px;
         height: 10px;
         transition: background 0.15s ease-out;
     }
 
-    .recentsIcon_c99c29:hover .iconBadge__9293f {
+    .recentsIcon_c99c29:hover .iconBadge_ybUK7Z {
         background: var(--white);
     }
 }
@@ -2039,11 +2039,11 @@ body {
     #app-mount {
         --custom-channel-header-height: calc(var(--guildbar-avatar-size) + var(--space-xs) + var(--border-thickness) * 2);
     }
-    .title_c38106,
-    .trailing_c38106 > a[href='https://support.discord.com'] {
+    .title_3zSH5d,
+    .trailing_3zSH5d > a[href='https://support.discord.com'] {
         display: none;
     }
-    .trailing_c38106 {
+    .trailing_3zSH5d {
         position: absolute;
         top: calc(var(--top-bar-height) + 8px + var(--border-thickness));
         right: calc(var(--gap) + var(--border-thickness));
@@ -2055,7 +2055,7 @@ body {
             transform 0.2s ease-in-out,
             opacity 0.2s ease-in-out;
     }
-    .popout__0bd4a .trailing_c38106 {
+    .popout_9Aa-7R .trailing_3zSH5d {
         z-index: 1100;
     }
     /* Fix window controls overlapping certain modals */
@@ -2063,106 +2063,106 @@ body {
     .modal_e44912 {
         --custom-viewport-padding: calc(var(--space-40) + var(--custom-app-top-bar-height));
     }
-    .layerContainer__59d0d .carouselModal_d3a6f0 {
+    .layerContainer_VVADeK .carouselModal_7QK1F9 {
         margin-top: var(--custom-viewport-padding);
     }
     /* Move window controls when mod view is open */
     /* No [style] test inside :has(): see the switch "Clicked state" note */
-    .base__5e434 > .bar_c38106:has(~ .content__5e434 > .page__5e434 > div > :is(.guildSidebar_f75fb0, .sidebarContainer__656be)) .trailing_c38106 {
+    .base_pog62O > .bar_3zSH5d:has(~ .content_pog62O > .page_pog62O > div > :is(.guildSidebar_z_gUBg, .sidebarContainer_MLLsfk)) .trailing_3zSH5d {
         right: calc(var(--gap) + var(--border-thickness) + 480px);
     }
-    .page__5e434 div[style='width: 480px;'] {
+    .page_pog62O div[style='width: 480px;'] {
         min-width: 480px;
     }
-    .winButtons_c38106 {
+    .winButtons_3zSH5d {
         padding: 0;
     }
-    .winButton_c38106 {
+    .winButton_3zSH5d {
         height: calc(var(--window-control-size) * 2);
     }
-    .winButtons_c38106::before {
+    .winButtons_3zSH5d::before {
         height: 16px;
         width: var(--space-xs);
         box-sizing: border-box;
         margin: 0;
     }
-    .toolbar__9293f {
+    .toolbar_ybUK7Z {
         padding-right: var(--top-bar-right-margin);
     }
     /* Remove unused space when thread or VC chat is open */
-    .page__5e434:has(> div > .chatLayerWrapper__01ae2) .chat_f75fb0.threadSidebarOpen_f75fb0 .toolbar__9293f,
-    .video_cb9592.sidebarOpen_cb9592 .toolbar__9293f {
+    .page_pog62O:has(> div > .chatLayerWrapper_FrbQJp) .chat_z_gUBg.threadSidebarOpen_z_gUBg .toolbar_ybUK7Z,
+    .video_hbKzX7.sidebarOpen_hbKzX7 .toolbar_ybUK7Z {
         padding-right: 0;
     }
-    .navBarContent__131a1,
-    .headerBarContent__1a9ce {
+    .navBarContent_jHfUxk,
+    .headerBarContent_tSk_LE {
         padding-right: var(--top-bar-right-margin);
     }
-    .headerBar__8a7fc {
+    .headerBar_Y0eJLL {
         padding-right: calc(var(--top-bar-right-margin) + var(--space-sm));
     }
-    .searchFloating__1ac1c {
+    .searchFloating_AV6l5m {
         right: calc(var(--top-bar-right-margin) + var(--space-sm));
     }
-    .balanceWidgetMenu__80679 {
+    .balanceWidgetMenu_z3MhG9 {
         margin-right: var(--top-bar-right-margin);
     }
-    .inviteToolbar__133bf {
+    .inviteToolbar_zrUwGA {
         padding-right: 0;
     }
-    .chat_f75fb0 > .layerContainer__59d0d {
+    .chat_z_gUBg > .layerContainer_VVADeK {
         z-index: 999;
     }
-    .subtitleContainer_f75fb0 {
+    .subtitleContainer_z_gUBg {
         height: var(--custom-channel-header-height);
     }
-    .title_f75fb0.container__9293f {
+    .title_z_gUBg.container_ybUK7Z {
         min-height: 0;
         height: auto;
     }
-    .followButton_f75fb0 {
+    .followButton_z_gUBg {
         padding-top: 0;
         padding-bottom: 0;
     }
-    .base__5e434 > .notice__6e2b9 ~ .bar_c38106 > .trailing_c38106,
-    .base__5e434 > .bar_c38106:has(~ .notice__6e2b9) > .trailing_c38106 {
+    .base_pog62O > .notice_Q02kKo ~ .bar_3zSH5d > .trailing_3zSH5d,
+    .base_pog62O > .bar_3zSH5d:has(~ .notice_Q02kKo) > .trailing_3zSH5d {
         top: calc(var(--top-bar-height) + 8px + 40px + var(--gap) + var(--border-thickness));
     }
 
-    .base__5e434 > .notice__29487 ~ .bar_c38106 > .trailing_c38106,
-    .base__5e434 > .bar_c38106:has(~ .notice__29487) > .trailing_c38106 {
+    .base_pog62O > .notice__29487 ~ .bar_3zSH5d > .trailing_3zSH5d,
+    .base_pog62O > .bar_3zSH5d:has(~ .notice__29487) > .trailing_3zSH5d {
         top: calc(var(--top-bar-height) + 8px + 40px + var(--gap) + var(--border-thickness));
     }
 
     /* Fix header icons and window controls overlap */
-    .base__5e434 {
+    .base_pog62O {
         /* Supports up to 6 buttons */
-        &:has(> .bar_c38106 > .trailing_c38106 > div:not(.winButtons_c38106):nth-of-type(1)) {
+        &:has(> .bar_3zSH5d > .trailing_3zSH5d > div:not(.winButtons_3zSH5d):nth-of-type(1)) {
             --button-count: 1;
         }
-        &:has(> .bar_c38106 > .trailing_c38106 > div:not(.winButtons_c38106):nth-of-type(2)) {
+        &:has(> .bar_3zSH5d > .trailing_3zSH5d > div:not(.winButtons_3zSH5d):nth-of-type(2)) {
             --button-count: 2;
         }
-        &:has(> .bar_c38106 > .trailing_c38106 > div:not(.winButtons_c38106):nth-of-type(3)) {
+        &:has(> .bar_3zSH5d > .trailing_3zSH5d > div:not(.winButtons_3zSH5d):nth-of-type(3)) {
             --button-count: 3;
         }
-        &:has(> .bar_c38106 > .trailing_c38106 > div:not(.winButtons_c38106):nth-of-type(4)) {
+        &:has(> .bar_3zSH5d > .trailing_3zSH5d > div:not(.winButtons_3zSH5d):nth-of-type(4)) {
             --button-count: 4;
         }
-        &:has(> .bar_c38106 > .trailing_c38106 > div:not(.winButtons_c38106):nth-of-type(5)) {
+        &:has(> .bar_3zSH5d > .trailing_3zSH5d > div:not(.winButtons_3zSH5d):nth-of-type(5)) {
             --button-count: 5;
         }
-        &:has(> .bar_c38106 > .trailing_c38106 > div:not(.winButtons_c38106):nth-of-type(6)) {
+        &:has(> .bar_3zSH5d > .trailing_3zSH5d > div:not(.winButtons_3zSH5d):nth-of-type(6)) {
             --button-count: 6;
         }
 
-        &:has(> .bar_c38106 > .trailing_c38106 > .winButtons_c38106) {
+        &:has(> .bar_3zSH5d > .trailing_3zSH5d > .winButtons_3zSH5d) {
             --top-bar-right-margin: calc(32px * var(--button-count) + (var(--button-count) + 2) * var(--space-xs) + 6 * var(--window-control-size) + var(--window-controls-padding));
         }
 
         /* Revert icon sizing changes */
-        .trailing_c38106 {
-            > div:not(.winButtons_c38106),
+        .trailing_3zSH5d {
+            > div:not(.winButtons_3zSH5d),
             div.clickable__81391 {
                 width: 32px !important;
                 height: 32px !important;
@@ -2178,21 +2178,21 @@ body {
         }
     }
     /* Mac / Vesktop users */
-    .base__5e434 {
+    .base_pog62O {
         --top-bar-right-margin: calc(32px * var(--button-count) + var(--button-count) * var(--space-xs));
     }
     /* VC popout */
-    .popout__0bd4a:has(> .titleBar__0bd4a) {
+    .popout_9Aa-7R:has(> .titleBar_9Aa-7R) {
         --top-bar-right-margin: calc((var(--window-control-size) * 6) + var(--window-controls-padding) + var(--space-xs));
     }
     /* Settings modal in portrait mode */
     @media screen and (max-width: 1080px) {
-        #app-mount:has(> .appAsidePanelWrapper_a3002d > div > .layerContainer__59d0d .modal_e44912) {
+        #app-mount:has(> .appAsidePanelWrapper_YRXZu0 > div > .layerContainer_VVADeK .modal_e44912) {
             .modal_e44912 {
                 padding-top: 0;
             }
 
-            .trailing_c38106 {
+            .trailing_3zSH5d {
                 top: calc(8.5px + var(--border-thickness));
                 right: var(--border-thickness);
             }
@@ -2204,7 +2204,7 @@ body {
     }
 
     /* Hide page seek arrows */
-    .bar_c38106 .backForwardButtons__63abb {
+    .bar_3zSH5d .backForwardButtons_nS9Yqn {
         display: none;
     }
 
@@ -2224,7 +2224,7 @@ body {
 }
 
 @container body style(--top-bar-title-position: left) {
-    .title_c38106 {
+    .title_3zSH5d {
         padding-left: var(--gap);
         justify-content: flex-start;
     }
@@ -2232,7 +2232,7 @@ body {
         gap: 4px;
     }
     /* Hide page seek arrows */
-    .bar_c38106 .backForwardButtons__63abb {
+    .bar_3zSH5d .backForwardButtons_nS9Yqn {
         display: none;
     }
 }
@@ -2244,7 +2244,7 @@ body {
 }
 
 @container body style(--subtle-top-bar-title: on) {
-    .title_edbb22 .icon_f34534,
+    .title_edbb22 .icon_qqAqr1,
     .title_edbb22 > svg {
         display: none;
     }
@@ -2267,23 +2267,23 @@ body {
         --panel-backdrop-filter: blur(var(--blur-amount));
     }
 
-    .popoverReactionHoverBar_f84418 /* message hover quick action bar */,
-        .tooltip_c36707 /* tooltips */ {
+    .popoverReactionHoverBar_DpHsW6 /* message hover quick action bar */,
+        .tooltip_3_v8qp /* tooltips */ {
         background: var(--bg-floating);
     }
-    .menu_c1e9c4 /* context menus */,
-        .contentWrapper__08434 /* emoji/gif panel */,
-        .root__49fc1 /* modals like invite */,
-        .outer_c0bea0.user-profile-popout:not(.custom-theme-background) /* small profile popup */,
-        .autocomplete__6b0e0 /* autocomplete */,
-        .container__55c99 /* search suggestions */,
-        .messagesPopoutWrap__432f4 /* inbox */,
-        .popout__76f04 /* channel hover popout */,
-        .bar__7aaec /* channel list new unreads bar */ {
+    .menu_M3qk4j /* context menus */,
+        .contentWrapper_58b0l2 /* emoji/gif panel */,
+        .root__KoJTP /* modals like invite */,
+        .outer_P1YEjQ.user-profile-popout:not(.custom-theme-background) /* small profile popup */,
+        .autocomplete_rg6La1 /* autocomplete */,
+        .container_uFkqU2 /* search suggestions */,
+        .messagesPopoutWrap_6bgemo /* inbox */,
+        .popout_j5xNzb /* channel hover popout */,
+        .bar_t1P8Sn /* channel list new unreads bar */ {
         background: var(--bg-floating);
     }
 
-    .menu_c1e9c4::before {
+    .menu_M3qk4j::before {
         content: '';
         position: absolute;
         backdrop-filter: var(--panel-backdrop-filter);
@@ -2293,11 +2293,11 @@ body {
         height: 100%;
     }
 
-    .submenuPaddingContainer_c1e9c4>.menu_c1e9c4::before {
+    .submenuPaddingContainer_M3qk4j>.menu_M3qk4j::before {
         width: calc(100% - 16px);
     }
 
-    .submenuPaddingContainer_ce8328>.menu_c1e9c4::before {
+    .submenuPaddingContainer_nitlyF>.menu_M3qk4j::before {
         width: calc(100% - 24px);
     }
 }
@@ -2309,13 +2309,13 @@ body {
 }
 
 @container body style(--transparency-tweaks: on) {
-    .children__9293f:after {
+    .children_ybUK7Z:after {
         display: none;
     }
-    .chatGradient__36d07 {
+    .chatGradient_8AE1Qq {
         display: none;
     }
-    .form_f75fb0 {
+    .form_z_gUBg {
         margin-top: 0;
     }
 }
@@ -2327,7 +2327,7 @@ body {
 }
 
 @container body style(--remove-bg-layer: on) {
-    .bg__960e4 {
+    .bg_Fd0FEH {
         background: transparent !important;
     }
 }
@@ -2340,18 +2340,18 @@ body {
 }
 
 @container body style(--small-user-panel: on) {
-    .panels__5e434 /* user panel */ {
+    .panels_pog62O /* user panel */ {
         right: 0;
         left: unset;
         width: calc(var(--custom-guild-sidebar-width) - var(--custom-guild-list-width));
     }
-    .guilds__5e434 /* server list */ {
+    .guilds_pog62O /* server list */ {
         margin-bottom: 0;
     }
 }
 
 /* Extra spacing for CallTimer plugin */
-.connection_e131a9:has(> .inner_e131a9 .labelWrapper__06d62 > a .lineClamp1__4bd52 p) {
+.connection_9U6LUN:has(> .inner_9U6LUN .labelWrapper_4LJE6I > a .lineClamp1_MMUIw6 p) {
     padding: calc(var(--custom-guild-list-padding) - var(--custom-panels-spacing) + 4px) 0;
 }
 
@@ -2361,7 +2361,7 @@ body {
     --window-controls-padding: calc(var(--gap) - (var(--window-control-size) / 2) + 1px);
 }
 
-.winButtons_c38106 {
+.winButtons_3zSH5d {
     padding-right: var(--window-controls-padding);
 }
 
@@ -2372,47 +2372,47 @@ body {
 }
 
 @container body style(--custom-window-controls: on) {
-    .winButtons_c38106 {
+    .winButtons_3zSH5d {
         gap: 0;
     }
-    .winButton_c38106 > svg {
+    .winButton_3zSH5d > svg {
         display: none;
     }
-    .winButton_c38106 {
+    .winButton_3zSH5d {
         background: none !important;
         width: calc(var(--window-control-size) * 2);
         height: var(--custom-app-top-bar-height);
     }
-    .winButton_c38106::after {
+    .winButton_3zSH5d::after {
         display: block;
         content: '';
         height: var(--window-control-size);
         width: var(--window-control-size);
         border-radius: 50%;
     }
-    .winButton_c38106:hover::after {
+    .winButton_3zSH5d:hover::after {
         filter: brightness(0.7);
     }
-    .winButton_c38106:active::after {
+    .winButton_3zSH5d:active::after {
         transform: scale(0.9);
     }
-    .winButtonClose_c38106::after {
+    .winButtonClose_3zSH5d::after {
         background-color: var(--dnd) !important;
     }
-    .winButtonMinMax_c38106:nth-child(1)::after {
+    .winButtonMinMax_3zSH5d:nth-child(1)::after {
         background-color: var(--idle) !important;
     }
-    .winButtonMinMax_c38106:nth-child(2)::after {
+    .winButtonMinMax_3zSH5d:nth-child(2)::after {
         background-color: var(--online) !important;
     }
 }
 
 @container body style(--custom-window-controls: off) and style(--top-bar-button-position: titlebar) {
-    .winButton_c38106 {
+    .winButton_3zSH5d {
         width: calc(var(--window-control-size) * 2);
         height: calc(var(--window-control-size) * 2);
     }
-    .winButtons_c38106 {
+    .winButtons_3zSH5d {
         gap: 0;
     }
 }
@@ -2562,46 +2562,46 @@ body {
 /* Reorder expression picker buttons (GIF | Sticker | Emoji). Keyed on the
    button classes, not aria-label: an attribute inside :has() makes every
    aria-label write in the app re-check the whole tree (3.1.72). */
-:where(html:not([data-mc-picker-order="stock"])) .expression-picker-chat-input-button:has(> .emojiButton__74017) {
+:where(html:not([data-mc-picker-order="stock"])) .expression-picker-chat-input-button:has(> .emojiButton_2x8-Qn) {
     order: 3 !important;
     ~ div { order: 2; }
 }
-:where(html:not([data-mc-picker-order="stock"])) .buttons__74017 > .expression-picker-chat-input-button:has(> .button__74017:not(.emojiButton__74017, .stickerButton__74017)) {
+:where(html:not([data-mc-picker-order="stock"])) .buttons_2x8-Qn > .expression-picker-chat-input-button:has(> .button_2x8-Qn:not(.emojiButton_2x8-Qn, .stickerButton_2x8-Qn)) {
     order: 1 !important;
     ~ div { order: 3; }
 }
 
 /* Profile bio textarea auto-height */
-.bioTextArea__6a919 {
+.bioTextArea_agtm70 {
     height: max-content;
 }
 
 /* Keep Discord's measured popup position and size. The expression picker
    owns its glass, clipping and scrolling, not the full-screen portal. */
-.contentWrapper__08434 {
+.contentWrapper_58b0l2 {
     min-width: 0;
     max-width: 100%;
     max-height: 100%;
     grid-template-rows: auto minmax(0, 1fr);
     overflow: hidden;
 }
-.positionContainerOnlyEmoji__08434 .contentWrapper__08434 {
+.positionContainerOnlyEmoji_58b0l2 .contentWrapper_58b0l2 {
     grid-template-rows: minmax(0, 1fr);
 }
-.drawerSizingWrapper__08434 {
+.drawerSizingWrapper_58b0l2 {
     min-width: 0;
     max-width: 100%;
     max-height: 100%;
 }
-.nav__08434 {
+.nav_58b0l2 {
     min-width: 0;
 }
-.navList__08434 {
+.navList_58b0l2 {
     min-width: 0;
     flex-wrap: wrap;
     gap: 4px;
 }
-.contentWrapper__08434 #gif-transfer-buttons {
+.contentWrapper_58b0l2 #gif-transfer-buttons {
     flex: 1 0 100%;
     flex-wrap: wrap;
     justify-content: flex-end;
@@ -2611,18 +2611,18 @@ body {
     margin-left: 0;
     padding-right: 0;
 }
-.contentWrapper__08434 > :not(.nav__08434) {
+.contentWrapper_58b0l2 > :not(.nav_58b0l2) {
     min-width: 0;
     min-height: 0;
     max-width: 100%;
 }
-.contentWrapper__08434 :is(.container_fed6d3, .wrapper__14245, .emojiPicker_c0e32c) {
+.contentWrapper_58b0l2 :is(.container_rfDq2B, .wrapper_kSdzCr, .emojiPicker_-sZhZn) {
     min-width: 0;
     min-height: 0;
     max-width: 100%;
     width: 100%;
 }
-.contentWrapper__08434 .emojiPicker_c0e32c {
+.contentWrapper_58b0l2 .emojiPicker_-sZhZn {
     grid-template-columns: 48px minmax(0, 1fr);
     grid-template-rows: auto minmax(0, 1fr) auto;
 }
@@ -2635,12 +2635,12 @@ div[class^="audioButtonParent__"] button[role="switch"] {
 :where(html:not([data-mc-voice-menus="show"])) :is(div[class*="-micButtonParent"], div[class^="audioButtonParent__"]) button[role="switch"] ~ button {
     display: none;
 }
-div.container__37e49 > div.buttons__37e49 {
+div.container_g6VwXp > div.buttons_g6VwXp {
     gap: 1px;
 }
 
 /* Message attachment icon container styling */
-.iconContainer__2ea32 {
+.iconContainer_TNyK-N {
     opacity: 0.6;
     background: rgba(0, 0, 0, 0.6) !important;
     border-radius: 100% !important;
@@ -2654,7 +2654,7 @@ div.container__37e49 > div.buttons__37e49 {
     flex-shrink: 0 !important;
 }
 /* Scale the complete glyph around its center, including multi-path icons. */
-.iconContainer__2ea32 svg {
+.iconContainer_TNyK-N svg {
     display: block;
     flex-shrink: 0;
     transform: scale(0.75) !important;
@@ -2669,22 +2669,22 @@ div.container__37e49 > div.buttons__37e49 {
 }
 
 @container body style(--custom-window-controls: on) {
-    .winButtons_c38106 {
+    .winButtons_3zSH5d {
         gap: 0;
         padding-right: calc(var(--gap) - (var(--window-control-size) / 2) + 1px);
     }
-    .winButtons_c38106::before {
+    .winButtons_3zSH5d::before {
         margin-right: calc(var(--custom-app-top-bar-height) / 4);
     }
-    .winButton_c38106 > svg {
+    .winButton_3zSH5d > svg {
         display: none;
     }
-    .winButton_c38106 {
+    .winButton_3zSH5d {
         background: none !important;
         width: calc(var(--window-control-size) * 2);
         height: var(--custom-app-top-bar-height);
     }
-    .winButton_c38106::after {
+    .winButton_3zSH5d::after {
         display: block;
         content: '';
         height: var(--window-control-size);
@@ -2693,26 +2693,26 @@ div.container__37e49 > div.buttons__37e49 {
         transition: box-shadow 0.5s ease;
     }
 
-    .winButtonClose_c38106::after { background-color: var(--dnd) !important; }
-    .winButtonClose_c38106:hover::after { box-shadow: 0 0 20px 6px var(--dnd); }
+    .winButtonClose_3zSH5d::after { background-color: var(--dnd) !important; }
+    .winButtonClose_3zSH5d:hover::after { box-shadow: 0 0 20px 6px var(--dnd); }
 
-    .winButtonMinMax_c38106:nth-child(1)::after { background-color: var(--idle) !important; }
-    .winButtonMinMax_c38106:nth-child(1):hover::after { box-shadow: 0 0 20px 6px var(--idle); }
+    .winButtonMinMax_3zSH5d:nth-child(1)::after { background-color: var(--idle) !important; }
+    .winButtonMinMax_3zSH5d:nth-child(1):hover::after { box-shadow: 0 0 20px 6px var(--idle); }
 
-    .winButtonMinMax_c38106:nth-child(2)::after { background-color: var(--online) !important; }
-    .winButtonMinMax_c38106:nth-child(2):hover::after { box-shadow: 0 0 20px 6px var(--online); }
+    .winButtonMinMax_3zSH5d:nth-child(2)::after { background-color: var(--online) !important; }
+    .winButtonMinMax_3zSH5d:nth-child(2):hover::after { box-shadow: 0 0 20px 6px var(--online); }
 
-    .winButton_c38106:hover::after { filter: none; }
-    .winButton_c38106:active::after { transform: scale(0.9); }
+    .winButton_3zSH5d:hover::after { filter: none; }
+    .winButton_3zSH5d:active::after { transform: scale(0.9); }
 }
 
 @container body style(--custom-window-controls: off) and style(--top-bar-button-position: titlebar) {
-    .visual-refresh .winButton_c38106 {
+    .visual-refresh .winButton_3zSH5d {
         width: calc(var(--window-control-size) * 2);
         height: calc(var(--window-control-size) * 2);
         border-radius: 0 !important;
     }
-    .visual-refresh .winButtons_c38106 {
+    .visual-refresh .winButtons_3zSH5d {
         gap: 0 !important;
     }
 }
@@ -2734,7 +2734,7 @@ input[type="checkbox"][role="switch"] {
 }
 
 /* Shift back/forward nav arrows right to align with server list */
-.backForwardButtons__63abb {
+.backForwardButtons_nS9Yqn {
     margin-left: 14px;
 }
 
@@ -2763,13 +2763,13 @@ input[type="checkbox"][role="switch"] {
     fill: var(--bg-1) !important;
 }
 
-.sidebarRegion__60457 {/*Left*/
+.sidebarRegion_jnk11m {/*Left*/
 max-width: fit-content !important; 
 }
 .contentColumn_dc7d36 { /*Right*/
     max-width: unset;
 }
-.standardSidebarView__1129a { /*Top*/
+.standardSidebarView_jnk11m { /*Top*/
 top: 0px !important;
 }
 .sidebar__9e3e2 { /*Sidebar Top*/
@@ -2841,19 +2841,19 @@ body {
     [data-mana-component="select-content"],
     [data-mana-component="tooltip"],
     [class*="tooltip_"],
-    .popoverGradientWrapper_d6f39b,
-    .timelineTooltip__68788,
-    .errorTooltip__3b3ff,
-    .reactionTooltip_bbcccb,
+    .popoverGradientWrapper_81IzEA,
+    .timelineTooltip_bktSrU,
+    .errorTooltip_JULZbQ,
+    .reactionTooltip_5l5ajC,
     /* Legacy tooltip variant roots (video tile Options, etc.) paint stock
        translucent --background-surface-high and never matched tooltip_.
        popoutLoader is the floating skeleton a popout shows while loading. */
     [class*="tooltipPrimary_"], [class*="tooltipGrey_"], [class*="tooltipBrand_"],
     [class*="tooltipRed_"], [class*="tooltipGreen_"], [class*="rewardTooltip_"],
     [class*="popoutLoader_"],
-    .popoutList__92efc,
-    .keyboardShortcutsModal_f061f6,
-    .dropdown_edf232,
+    .popoutList_E0Vl-O,
+    .keyboardShortcutsModal_jCEr5v,
+    .dropdown_tVJ6Al,
     .modal_e44912,
     .fakedm-dropdown,
     .gc-dropdown-list,
@@ -2871,25 +2871,25 @@ body {
     [class*="recentMentionsPopout_"],
     [class*="quickSelectPopout_"],
     [class*="user-profile-popout"],
-    .outer_c0bea0.user-profile-modal-v2,
-    [class*="popout_"]:not(.popout__0bd4a),
+    .outer_P1YEjQ.user-profile-modal-v2,
+    [class*="popout_"]:not(.popout_9Aa-7R),
     [class*="Popout_"],
     [class*="popoutContainer_"],
     [class*="popoutRoot_"],
     [class*="popoutContentWrapper_"],
-    .contentWrapper__08434,
-    .container__55c99,
-    .root__49fc1:not(.custom-user-profile-theme),
-    .selectDropdown__0edde,
-    .picker__09f65,
+    .contentWrapper_58b0l2,
+    .container_uFkqU2,
+    .root__KoJTP:not(.custom-user-profile-theme),
+    .selectDropdown_vWC4bk,
+    .picker_1lN7Eh,
     .react-datepicker,
-    .customColorPicker__459fb,
-    .statusPickerModal_ce8328,
-    .recentChannelsMenu__711d3,
-    .languageSelector__4d95d,
+    .customColorPicker_BorJ2C,
+    .statusPickerModal_nitlyF,
+    .recentChannelsMenu_NNQ_IR,
+    .languageSelector_BOOBu-,
     .layer__95d7b,
-    .baselayer__518a0,
-    .nowPlayingNotificationAnimationWrapper__81a05,
+    .baselayer_O41c2-,
+    .nowPlayingNotificationAnimationWrapper_LCQ2_0,
     [class*="popoutContent_"],
     .vc-class-highlight-tooltip,
     .vc-bactivities-controls-tooltip, .vc-popover-overflow,
@@ -2943,19 +2943,19 @@ body {
     [data-mana-component="select-content"],
     [data-mana-component="tooltip"],
     [class*="tooltip_"],
-    .popoverGradientWrapper_d6f39b,
-    .timelineTooltip__68788,
-    .errorTooltip__3b3ff,
-    .reactionTooltip_bbcccb,
+    .popoverGradientWrapper_81IzEA,
+    .timelineTooltip_bktSrU,
+    .errorTooltip_JULZbQ,
+    .reactionTooltip_5l5ajC,
     /* Legacy tooltip variant roots (video tile Options, etc.) paint stock
        translucent --background-surface-high and never matched tooltip_.
        popoutLoader is the floating skeleton a popout shows while loading. */
     [class*="tooltipPrimary_"], [class*="tooltipGrey_"], [class*="tooltipBrand_"],
     [class*="tooltipRed_"], [class*="tooltipGreen_"], [class*="rewardTooltip_"],
     [class*="popoutLoader_"],
-    .popoutList__92efc,
-    .keyboardShortcutsModal_f061f6,
-    .dropdown_edf232,
+    .popoutList_E0Vl-O,
+    .keyboardShortcutsModal_jCEr5v,
+    .dropdown_tVJ6Al,
     .modal_e44912,
     .fakedm-dropdown,
     .gc-dropdown-list,
@@ -2973,25 +2973,25 @@ body {
     [class*="recentMentionsPopout_"],
     [class*="quickSelectPopout_"],
     [class*="user-profile-popout"],
-    .outer_c0bea0.user-profile-modal-v2,
-    [class*="popout_"]:not(.popout__0bd4a),
+    .outer_P1YEjQ.user-profile-modal-v2,
+    [class*="popout_"]:not(.popout_9Aa-7R),
     [class*="Popout_"],
     [class*="popoutContainer_"],
     [class*="popoutRoot_"],
     [class*="popoutContentWrapper_"],
-    .contentWrapper__08434,
-    .container__55c99,
-    .root__49fc1:not(.custom-user-profile-theme),
-    .selectDropdown__0edde,
-    .picker__09f65,
+    .contentWrapper_58b0l2,
+    .container_uFkqU2,
+    .root__KoJTP:not(.custom-user-profile-theme),
+    .selectDropdown_vWC4bk,
+    .picker_1lN7Eh,
     .react-datepicker,
-    .customColorPicker__459fb,
-    .statusPickerModal_ce8328,
-    .recentChannelsMenu__711d3,
-    .languageSelector__4d95d,
+    .customColorPicker_BorJ2C,
+    .statusPickerModal_nitlyF,
+    .recentChannelsMenu_NNQ_IR,
+    .languageSelector_BOOBu-,
     .layer__95d7b,
-    .baselayer__518a0,
-    .nowPlayingNotificationAnimationWrapper__81a05,
+    .baselayer_O41c2-,
+    .nowPlayingNotificationAnimationWrapper_LCQ2_0,
     [class*="popoutContent_"],
     .vc-class-highlight-tooltip,
     .vc-bactivities-controls-tooltip, .vc-popover-overflow,
@@ -3020,19 +3020,19 @@ body {
     [data-mana-component="select-content"],
     [data-mana-component="tooltip"],
     [class*="tooltip_"],
-    .popoverGradientWrapper_d6f39b,
-    .timelineTooltip__68788,
-    .errorTooltip__3b3ff,
-    .reactionTooltip_bbcccb,
+    .popoverGradientWrapper_81IzEA,
+    .timelineTooltip_bktSrU,
+    .errorTooltip_JULZbQ,
+    .reactionTooltip_5l5ajC,
     /* Legacy tooltip variant roots (video tile Options, etc.) paint stock
        translucent --background-surface-high and never matched tooltip_.
        popoutLoader is the floating skeleton a popout shows while loading. */
     [class*="tooltipPrimary_"], [class*="tooltipGrey_"], [class*="tooltipBrand_"],
     [class*="tooltipRed_"], [class*="tooltipGreen_"], [class*="rewardTooltip_"],
     [class*="popoutLoader_"],
-    .popoutList__92efc,
-    .keyboardShortcutsModal_f061f6,
-    .dropdown_edf232,
+    .popoutList_E0Vl-O,
+    .keyboardShortcutsModal_jCEr5v,
+    .dropdown_tVJ6Al,
     .modal_e44912,
     .fakedm-dropdown,
     .gc-dropdown-list,
@@ -3050,25 +3050,25 @@ body {
     [class*="recentMentionsPopout_"],
     [class*="quickSelectPopout_"],
     [class*="user-profile-popout"],
-    .outer_c0bea0.user-profile-modal-v2,
-    [class*="popout_"]:not(.popout__0bd4a),
+    .outer_P1YEjQ.user-profile-modal-v2,
+    [class*="popout_"]:not(.popout_9Aa-7R),
     [class*="Popout_"],
     [class*="popoutContainer_"],
     [class*="popoutRoot_"],
     [class*="popoutContentWrapper_"],
-    .contentWrapper__08434,
-    .container__55c99,
-    .root__49fc1:not(.custom-user-profile-theme),
-    .selectDropdown__0edde,
-    .picker__09f65,
+    .contentWrapper_58b0l2,
+    .container_uFkqU2,
+    .root__KoJTP:not(.custom-user-profile-theme),
+    .selectDropdown_vWC4bk,
+    .picker_1lN7Eh,
     .react-datepicker,
-    .customColorPicker__459fb,
-    .statusPickerModal_ce8328,
-    .recentChannelsMenu__711d3,
-    .languageSelector__4d95d,
+    .customColorPicker_BorJ2C,
+    .statusPickerModal_nitlyF,
+    .recentChannelsMenu_NNQ_IR,
+    .languageSelector_BOOBu-,
     .layer__95d7b,
-    .baselayer__518a0,
-    .nowPlayingNotificationAnimationWrapper__81a05,
+    .baselayer_O41c2-,
+    .nowPlayingNotificationAnimationWrapper_LCQ2_0,
     [class*="popoutContent_"],
     .vc-class-highlight-tooltip,
     .vc-bactivities-controls-tooltip, .vc-popover-overflow,
@@ -3151,9 +3151,9 @@ body {
    bubble's react/reply bar showed the desktop). The :not() id outranks
    every copy of the strip. */
 :is(
-    .popover_f84418,
-    .popover_c97e55,
-    .buttonsInner__5126c,
+    .popover_DpHsW6,
+    .popover_yDAPhH,
+    .buttonsInner_SY_P2T,
     [class*="miniPopover_"],
     [class*="popoverReactionHoverBar_"]
 ):not(#mochacord-messagebar-guard) {
@@ -3177,7 +3177,7 @@ body {
    covering the role protects every inline combo box, including ones with
    unlisted class hashes. */
 :is(
-    .selectDropdown__0edde,
+    .selectDropdown_vWC4bk,
     [role="listbox"],
     [data-mana-component="select-content"],
     [data-mana-component="listbox"],
@@ -3204,7 +3204,7 @@ body {
    in every scroll position. Scoped to the modal shell's body list so a
    destination-row surface rendered outside this shell keeps its stock
    bleed. */
-[class*="bodyList__8a031"] [class*="destinationRow_"] {
+[class*="bodyList_dvN-MP"] [class*="destinationRow_"] {
     margin-inline: 0 !important;
 }
 
@@ -3213,7 +3213,7 @@ body {
    inside the rounded dropdown root: the Show All list showed sharp corners
    where the panel met the root. The inner list is transparent and the root's
    glass shows through it. */
-:is(.selectDropdown__0edde, [data-mana-component="select-content"]):not(#mochacord-select-guard) :is(
+:is(.selectDropdown_vWC4bk, [data-mana-component="select-content"]):not(#mochacord-select-guard) :is(
     [role="listbox"],
     [data-mana-component="listbox"]
 ):not(#mochacord-select-guard) {
@@ -3237,19 +3237,19 @@ body {
     [data-mana-component="select-content"],
     [data-mana-component="tooltip"],
     [class*="tooltip_"],
-    .popoverGradientWrapper_d6f39b,
-    .timelineTooltip__68788,
-    .errorTooltip__3b3ff,
-    .reactionTooltip_bbcccb,
+    .popoverGradientWrapper_81IzEA,
+    .timelineTooltip_bktSrU,
+    .errorTooltip_JULZbQ,
+    .reactionTooltip_5l5ajC,
     /* Legacy tooltip variant roots (video tile Options, etc.) paint stock
        translucent --background-surface-high and never matched tooltip_.
        popoutLoader is the floating skeleton a popout shows while loading. */
     [class*="tooltipPrimary_"], [class*="tooltipGrey_"], [class*="tooltipBrand_"],
     [class*="tooltipRed_"], [class*="tooltipGreen_"], [class*="rewardTooltip_"],
     [class*="popoutLoader_"],
-    .popoutList__92efc,
-    .keyboardShortcutsModal_f061f6,
-    .dropdown_edf232,
+    .popoutList_E0Vl-O,
+    .keyboardShortcutsModal_jCEr5v,
+    .dropdown_tVJ6Al,
     .modal_e44912,
     .fakedm-dropdown,
     .gc-dropdown-list,
@@ -3267,25 +3267,25 @@ body {
     [class*="recentMentionsPopout_"],
     [class*="quickSelectPopout_"],
     [class*="user-profile-popout"],
-    .outer_c0bea0.user-profile-modal-v2,
-    [class*="popout_"]:not(.popout__0bd4a),
+    .outer_P1YEjQ.user-profile-modal-v2,
+    [class*="popout_"]:not(.popout_9Aa-7R),
     [class*="Popout_"],
     [class*="popoutContainer_"],
     [class*="popoutRoot_"],
     [class*="popoutContentWrapper_"],
-    .contentWrapper__08434,
-    .container__55c99,
-    .root__49fc1:not(.custom-user-profile-theme),
-    .selectDropdown__0edde,
-    .picker__09f65,
+    .contentWrapper_58b0l2,
+    .container_uFkqU2,
+    .root__KoJTP:not(.custom-user-profile-theme),
+    .selectDropdown_vWC4bk,
+    .picker_1lN7Eh,
     .react-datepicker,
-    .customColorPicker__459fb,
-    .statusPickerModal_ce8328,
-    .recentChannelsMenu__711d3,
-    .languageSelector__4d95d,
+    .customColorPicker_BorJ2C,
+    .statusPickerModal_nitlyF,
+    .recentChannelsMenu_NNQ_IR,
+    .languageSelector_BOOBu-,
     .layer__95d7b,
-    .baselayer__518a0,
-    .nowPlayingNotificationAnimationWrapper__81a05,
+    .baselayer_O41c2-,
+    .nowPlayingNotificationAnimationWrapper_LCQ2_0,
     [class*="popoutContent_"],
     .vc-class-highlight-tooltip,
     .vc-bactivities-controls-tooltip, .vc-popover-overflow,
@@ -3306,13 +3306,13 @@ body {
     .vc-cal-tools-menu
 ) :is(
     .key__98feb,
-    .embedCard_b99f57, .embedCard__44c9a,
-    .code__1a1f5, .code__2e07e, .inlineCode__2e07e, .inlineCode__59fad, .hljs,
-    .pollAnswerOption_a60893,
+    .embedCard_q-l2Gj, .embedCard_CKGXbh,
+    .code_PpKUqH, .code_ZZTOYh, .inlineCode_ZZTOYh, .inlineCode__59fad, .hljs,
+    .pollAnswerOption_-weL8h,
     .inviteCard__742a4,
-    .preview__6b741,
+    .preview_TpS9Es,
     .usagePill__74f72,
-    .role_b4b2c3
+    .role_p3g15p
 ) {
     background-color: var(--bg-3);
 }
@@ -3320,15 +3320,15 @@ body {
 /* A filtered menu root blocks a submenu from sampling pixels outside it.
    Put the glass on a sibling ::before layer so every submenu can frost the
    page behind it. This replaces Midnight's second, unpositioned blur layer. */
-:root .menu_c1e9c4 {
+:root .menu_M3qk4j {
     position: relative;
     background: transparent !important;
     -webkit-backdrop-filter: none !important;
     backdrop-filter: none !important;
 }
-.menu_c1e9c4::before,
-.submenuPaddingContainer_c1e9c4 > .menu_c1e9c4::before,
-.submenuPaddingContainer_ce8328 > .menu_c1e9c4::before {
+.menu_M3qk4j::before,
+.submenuPaddingContainer_M3qk4j > .menu_M3qk4j::before,
+.submenuPaddingContainer_nitlyF > .menu_M3qk4j::before {
     content: "";
     position: absolute;
     inset: 0;
@@ -3358,12 +3358,12 @@ body {
    With surface levels solid again, its headers, emoji list and sticky
    category headers keep this explicit transparency so the picker stays
    seamless. */
-.contentWrapper__08434 :is(
-    .emojiPicker_c0e32c, .wrapper__14245, .container_fed6d3,
-    .header_c0e32c, .emojiPickerHeader__0800c, .soundboardHeader__08434,
-    .header_fed6d3, .header__8ef02, .emojiList__4a30c, .categoryHeader_d1405b
+.contentWrapper_58b0l2 :is(
+    .emojiPicker_-sZhZn, .wrapper_kSdzCr, .container_rfDq2B,
+    .header_-sZhZn, .emojiPickerHeader__0800c, .soundboardHeader_58b0l2,
+    .header_rfDq2B, .header_WSRqCO, .emojiList_gYY06b, .categoryHeader_3dKq9h
 ),
-.messagesPopoutWrap__432f4 > .header__432f4 {
+.messagesPopoutWrap_6bgemo > .header_6bgemo {
     background: transparent !important;
 }
 
@@ -3374,7 +3374,7 @@ body {
 /* Keep toast text readable and match tooltip arrows to the pills. Every
    tooltip pointer family (hash suffixes move between builds) takes the
    pill surface, matching the body root it points at. */
-.tooltipPointer_c36707,
+.tooltipPointer_3_v8qp,
 [class*="tooltipPointer_"] {
     border-top-color: var(--mochacord-acrylic-tooltip) !important;
 }
@@ -3460,19 +3460,19 @@ body {
     [data-mana-component="select-content"],
     [data-mana-component="tooltip"],
     [class*="tooltip_"],
-    .popoverGradientWrapper_d6f39b,
-    .timelineTooltip__68788,
-    .errorTooltip__3b3ff,
-    .reactionTooltip_bbcccb,
+    .popoverGradientWrapper_81IzEA,
+    .timelineTooltip_bktSrU,
+    .errorTooltip_JULZbQ,
+    .reactionTooltip_5l5ajC,
     /* Legacy tooltip variant roots (video tile Options, etc.) paint stock
        translucent --background-surface-high and never matched tooltip_.
        popoutLoader is the floating skeleton a popout shows while loading. */
     [class*="tooltipPrimary_"], [class*="tooltipGrey_"], [class*="tooltipBrand_"],
     [class*="tooltipRed_"], [class*="tooltipGreen_"], [class*="rewardTooltip_"],
     [class*="popoutLoader_"],
-    .popoutList__92efc,
-    .keyboardShortcutsModal_f061f6,
-    .dropdown_edf232,
+    .popoutList_E0Vl-O,
+    .keyboardShortcutsModal_jCEr5v,
+    .dropdown_tVJ6Al,
     .modal_e44912,
     .fakedm-dropdown,
     .gc-dropdown-list,
@@ -3490,25 +3490,25 @@ body {
     [class*="recentMentionsPopout_"],
     [class*="quickSelectPopout_"],
     [class*="user-profile-popout"],
-    .outer_c0bea0.user-profile-modal-v2,
-    [class*="popout_"]:not(.popout__0bd4a),
+    .outer_P1YEjQ.user-profile-modal-v2,
+    [class*="popout_"]:not(.popout_9Aa-7R),
     [class*="Popout_"],
     [class*="popoutContainer_"],
     [class*="popoutRoot_"],
     [class*="popoutContentWrapper_"],
-    .contentWrapper__08434,
-    .container__55c99,
-    .root__49fc1:not(.custom-user-profile-theme),
-    .selectDropdown__0edde,
-    .picker__09f65,
+    .contentWrapper_58b0l2,
+    .container_uFkqU2,
+    .root__KoJTP:not(.custom-user-profile-theme),
+    .selectDropdown_vWC4bk,
+    .picker_1lN7Eh,
     .react-datepicker,
-    .customColorPicker__459fb,
-    .statusPickerModal_ce8328,
-    .recentChannelsMenu__711d3,
-    .languageSelector__4d95d,
+    .customColorPicker_BorJ2C,
+    .statusPickerModal_nitlyF,
+    .recentChannelsMenu_NNQ_IR,
+    .languageSelector_BOOBu-,
     .layer__95d7b,
-    .baselayer__518a0,
-    .nowPlayingNotificationAnimationWrapper__81a05,
+    .baselayer_O41c2-,
+    .nowPlayingNotificationAnimationWrapper_LCQ2_0,
     [class*="popoutContent_"],
     .vc-class-highlight-tooltip,
     .vc-bactivities-controls-tooltip, .vc-popover-overflow,
@@ -3528,7 +3528,7 @@ body {
     .vc-cal-custom-select-menu, .ps-custom-select-menu,
     .vc-cal-tools-menu
 ),
-    .menu_c1e9c4::before,
+    .menu_M3qk4j::before,
     .fakedm-popout::before,
     .gc-popover::before {
         background: var(--bg-floating) !important;
@@ -3600,22 +3600,22 @@ html[data-mc-window-blur="off"] [class*="callContainer"] > [class*="root_"] {
    the chat open, the same rule drops the inline-end edge to 1px and keeps it at
    the rest colour on hover. Restore both edges at the panel's own width and
    colours. */
-#app-mount .callContainer_cb9592 {
+#app-mount .callContainer_hbKzX7 {
     border-top: var(--border-thickness) solid var(--border-subtle);
 }
-#app-mount .callContainer_cb9592:hover {
+#app-mount .callContainer_hbKzX7:hover {
     border-top-color: var(--border-hover);
 }
-#app-mount .wrapper_cb9592.sidebarOpen_cb9592 .callContainer_cb9592 {
+#app-mount .wrapper_hbKzX7.sidebarOpen_hbKzX7 .callContainer_hbKzX7 {
     border-inline-end: var(--border-thickness) solid var(--border-subtle);
 }
-#app-mount .wrapper_cb9592.sidebarOpen_cb9592 .callContainer_cb9592:hover {
+#app-mount .wrapper_hbKzX7.sidebarOpen_hbKzX7 .callContainer_hbKzX7:hover {
     border-inline-end-color: var(--border-hover);
 }
 
 /* MochaCord header margin repair. Midnight's #app-mount titlebar rule also
    matches the row inside the bordered header. Keep spacing on the outer panel. */
-#app-mount .subtitleContainer_f75fb0 > .title_f75fb0.container__9293f {
+#app-mount .subtitleContainer_z_gUBg > .title_z_gUBg.container_ybUK7Z {
     margin-bottom: 0 !important;
 }
 
@@ -3626,71 +3626,71 @@ body, #app-mount, .theme-dark:not(.custom-user-profile-theme) {
 
 /* Restore the bottom edge of standalone thread, Friends and home headers.
    Midnight removes it from titlebars, leaving the rounded panel open.
-   The quests pill (headerBar__1a9ce) and the server boosts titlebar
-   (toolbar__89463) carry container__9293f directly, so Midnight's
+   The quests pill (headerBar_tSk_LE) and the server boosts titlebar
+   (toolbar__89463) carry container_ybUK7Z directly, so Midnight's
    border-bottom stripper also ate their bottom edge while the panel list
    framed and hover-ringed the rest.
    Keep the current border color so the gray and blue hover edges match. */
-#app-mount .container__01ae2 > .container__9293f,
-#app-mount .container__133bf > .container__9293f,
-#app-mount .container_f391e3 > .container__9293f,
-#app-mount .homeWrapper__0920e > .container__9293f,
-#app-mount .container_fb64c9 > .container__9293f,
-#app-mount .headerBar__1a9ce.container__9293f,
-#app-mount .toolbar__89463.container__9293f {
+#app-mount .container_FrbQJp > .container_ybUK7Z,
+#app-mount .container_zrUwGA > .container_ybUK7Z,
+#app-mount .container_nMe-a6 > .container_ybUK7Z,
+#app-mount .homeWrapper__0920e > .container_ybUK7Z,
+#app-mount .container_UU236g > .container_ybUK7Z,
+#app-mount .headerBar_tSk_LE.container_ybUK7Z,
+#app-mount .toolbar__89463.container_ybUK7Z {
     border-bottom-width: var(--border-thickness);
     border-bottom-style: solid;
     border-bottom-color: var(--border-subtle);
 }
 
-#app-mount .container__01ae2 > .container__9293f:hover,
-#app-mount .container__133bf > .container__9293f:hover,
-#app-mount .container_f391e3 > .container__9293f:hover,
-#app-mount .homeWrapper__0920e > .container__9293f:hover,
-#app-mount .container_fb64c9 > .container__9293f:hover,
-#app-mount .headerBar__1a9ce.container__9293f:hover,
-#app-mount .toolbar__89463.container__9293f:hover {
+#app-mount .container_FrbQJp > .container_ybUK7Z:hover,
+#app-mount .container_zrUwGA > .container_ybUK7Z:hover,
+#app-mount .container_nMe-a6 > .container_ybUK7Z:hover,
+#app-mount .homeWrapper__0920e > .container_ybUK7Z:hover,
+#app-mount .container_UU236g > .container_ybUK7Z:hover,
+#app-mount .headerBar_tSk_LE.container_ybUK7Z:hover,
+#app-mount .toolbar__89463.container_ybUK7Z:hover {
     border-bottom-color: var(--border-hover);
 }
 
 /* Restore the left edge of the Message Requests content panel. Midnight's
-   panel list frames .container_f391e3 > .content_f75fb0 on all four edges,
-   but its chat-outer rule (.page__5e434 > div > .chat_f75fb0 >
-   .content_f75fb0) strips border-left, and it also matches Message Requests
-   because that container carries chat_f75fb0. The corner arc still painted,
+   panel list frames .container_nMe-a6 > .content_z_gUBg on all four edges,
+   but its chat-outer rule (.page_pog62O > div > .chat_z_gUBg >
+   .content_z_gUBg) strips border-left, and it also matches Message Requests
+   because that container carries chat_z_gUBg. The corner arc still painted,
    so the edge read as cut off partway down, gray at rest and blue on hover
-   elsewhere. Scoped to container_f391e3 so normal chat keeps its flush edge. */
-#app-mount .container_f391e3 > .content_f75fb0 {
+   elsewhere. Scoped to container_nMe-a6 so normal chat keeps its flush edge. */
+#app-mount .container_nMe-a6 > .content_z_gUBg {
     border-left-width: var(--border-thickness);
     border-left-style: solid;
     border-left-color: var(--border-subtle);
 }
-#app-mount .container_f391e3 > .content_f75fb0:hover {
+#app-mount .container_nMe-a6 > .content_z_gUBg:hover {
     border-left-color: var(--border-hover);
 }
 
 /* The imported username bubble belongs only to message headers. Gradient
    names elsewhere must not paint an absolute rectangle behind the row. */
-.convenienceGlowGradient_e5de78:not(.username_c19a55)::before {
+.convenienceGlowGradient_HG2xvK:not(.username_2i8Bfm)::before {
     content: none !important;
 }
 
 /* Clip artwork at the inner sheet. Keep the outer profile open for popovers. */
-.outer_c0bea0.user-profile-sidebar > .inner_c0bea0 {
+.outer_P1YEjQ.user-profile-sidebar > .inner_P1YEjQ {
     border-radius: inherit;
     overflow: hidden;
 }
-.outer_c0bea0.user-profile-modal-v2 {
+.outer_P1YEjQ.user-profile-modal-v2 {
     overflow: hidden;
 }
 
 /* Frost the lightbox scrim once. Keep its image and controls sharp. */
-#app-mount .scrim__40128.lightbox__40128 {
+#app-mount .scrim_od1dl1.lightbox_od1dl1 {
     background: color-mix(in srgb, var(--bg-floating) 55%, transparent) !important;
     -webkit-backdrop-filter: var(--mochacord-acrylic-filter) !important;
     backdrop-filter: var(--mochacord-acrylic-filter) !important;
 }
-#app-mount .carouselModal_d3a6f0 {
+#app-mount .carouselModal_7QK1F9 {
     background: transparent !important;
     -webkit-backdrop-filter: none !important;
     backdrop-filter: none !important;
@@ -3710,7 +3710,7 @@ body, #app-mount, .theme-dark:not(.custom-user-profile-theme) {
 
 /* The compact search import leaves Discord's 244px flex basis in place.
    Size its wrapper too, and let the expanded input shrink with the header. */
-#app-mount .toolbar__9293f {
+#app-mount .toolbar_ybUK7Z {
     min-width: 0;
     flex-shrink: 1;
 }
@@ -3720,16 +3720,16 @@ body, #app-mount, .theme-dark:not(.custom-user-profile-theme) {
     max-width: 244px;
     width: 32px !important;
 }
-#app-mount .search__49676:has(.open_c322aa) {
+#app-mount .search__49676:has(.open_i16Ad0) {
     flex-basis: 244px;
     width: 244px !important;
 }
-#app-mount .search_c322aa {
+#app-mount .search_i16Ad0 {
     min-width: 0;
     width: 100%;
 }
-#app-mount .search_c322aa > .searchBar_c322aa,
-#app-mount .search_c322aa.open_c322aa > .searchBar_c322aa {
+#app-mount .search_i16Ad0 > .searchBar_i16Ad0,
+#app-mount .search_i16Ad0.open_i16Ad0 > .searchBar_i16Ad0 {
     width: 100% !important;
     min-width: 0;
     max-width: 100%;
@@ -3744,7 +3744,7 @@ body, #app-mount, .theme-dark:not(.custom-user-profile-theme) {
    box. Stretch the icon layer over the bar and centre a 20px slot instead;
    the editor stays in flow underneath it, and the icon layer keeps its own
    onClick, so focus/click-to-open is unchanged. */
-#app-mount .search__49676 .searchBar_c322aa .icon_c322aa {
+#app-mount .search__49676 .searchBar_i16Ad0 .icon_i16Ad0 {
     position: absolute;
     inset: 0;
     width: 100% !important;
@@ -3752,7 +3752,7 @@ body, #app-mount, .theme-dark:not(.custom-user-profile-theme) {
     margin: 0 !important;
     padding: 0 !important;
 }
-#app-mount .search__49676 .searchBar_c322aa .iconContainer__0c4c4 {
+#app-mount .search__49676 .searchBar_i16Ad0 .iconContainer__0c4c4 {
     width: 20px !important;
     height: 20px !important;
 }
@@ -3760,31 +3760,31 @@ body, #app-mount, .theme-dark:not(.custom-user-profile-theme) {
 /* The editor keeps focus but must not paint under the centred icon: its
    placeholder bled through the magnifier's open ring. Zero its footprint;
    the icon layer's own onClick still opens the search. */
-#app-mount .search__49676 .searchBar_c322aa .editor__25bec {
+#app-mount .search__49676 .searchBar_i16Ad0 .editor__25bec {
     flex: 0 0 0 !important;
     width: 0 !important;
     min-width: 0 !important;
     padding: 0 !important;
 }
 
-/* Open search (search_c322aa carries open_c322aa, no :has() so the rule
+/* Open search (search_i16Ad0 carries open_i16Ad0, no :has() so the rule
    survives any managed-sheet composer): return the icon to its measured
    stock in-input seat - static 24px box, 4px padding, 7px inline-end margin,
    16x24 glyph slot - so the expanded input is untouched. */
-#app-mount .search__49676 .search_c322aa.open_c322aa .icon_c322aa {
+#app-mount .search__49676 .search_i16Ad0.open_i16Ad0 .icon_i16Ad0 {
     position: static;
     width: 24px !important;
     height: 24px !important;
     margin: 0 7px 0 0 !important;
     padding: 4px !important;
 }
-#app-mount .search__49676 .search_c322aa.open_c322aa .iconContainer__0c4c4 {
+#app-mount .search__49676 .search_i16Ad0.open_i16Ad0 .iconContainer__0c4c4 {
     width: 16px !important;
     height: 24px !important;
 }
 /* ...and give the editor its stock metrics back (measured stock: flex 1 1 0,
    min-width 0, 6px inline padding, ~211px wide in the 244px bar). */
-#app-mount .search__49676 .search_c322aa.open_c322aa .editor__25bec {
+#app-mount .search__49676 .search_i16Ad0.open_i16Ad0 .editor__25bec {
     flex: 1 1 0% !important;
     width: auto !important;
     min-width: 0 !important;
@@ -3855,19 +3855,19 @@ body, #app-mount, .theme-dark:not(.custom-user-profile-theme) {
 /* 3.1.71: client 1.0.9265 dropped every "Accepted" class from completed bars, so
    the 3.1.44/3.1.63/3.1.68 guards below never match and this swap fired on
    completed bars again: the card blinked (151 -> 103px) and the Claim Reward
-   CTA landed under overlay__0d616, gray and unclickable (measured live on 9334,
+   CTA landed under overlay_jdr5pz, gray and unclickable (measured live on 9334,
    elementFromPoint at the CTA returned the overlay). A completed bar is the one
    whose resting row carries the CTA, so the swap now skips any bar that has one.
    In-progress and video-quest bars have no CTA in that row and keep their swap.
    3.1.72: exact class names instead of [class*=] substrings, inside :has() and
    after it. Substring classes there made every class change anywhere in the
    app cost a full restyle (75-140 ms, measured on 9334); exact classes 0.4 ms.
-   Classes from the live QuestBar modules: cta_cc03e1 (progress/claim row),
-   cta__1699b (promo), contentCollapsed* (7004f/1699b), contentExpanded__24e2c. */
-#app-mount [data-testid="quest-bar-container"]:hover > [class*="contentWrapper"]:not(:has(> :is(.contentCollapsed__7004f, .contentCollapsedWrapper__7004f, .contentCollapsedBackgroundWrapper__1699b) :is(.cta_cc03e1, .cta__1699b))) :is(.contentCollapsed__7004f, .contentCollapsedWrapper__7004f, .contentCollapsedBackgroundWrapper__1699b, .contentCollapsedBackground__1699b):not([class*="Accepted"]) {
+   Classes from the live QuestBar modules: cta_ZzrVHV (progress/claim row),
+   cta_ZzrVHV (promo), contentCollapsed* (7004f/1699b), contentExpanded_A1jYpL. */
+#app-mount [data-testid="quest-bar-container"]:hover > [class*="contentWrapper"]:not(:has(> :is(.contentCollapsed_7Oadp0, .contentCollapsedWrapper_7Oadp0, .contentCollapsedBackgroundWrapper_ZzrVHV) :is(.cta_ZzrVHV, .cta_ZzrVHV))) :is(.contentCollapsed_7Oadp0, .contentCollapsedWrapper_7Oadp0, .contentCollapsedBackgroundWrapper_ZzrVHV, .contentCollapsedBackground_ZzrVHV):not([class*="Accepted"]) {
     display: none !important;
 }
-#app-mount [data-testid="quest-bar-container"]:hover > [class*="contentWrapper"]:not(:has(> :is(.contentCollapsed__7004f, .contentCollapsedWrapper__7004f, .contentCollapsedBackgroundWrapper__1699b) :is(.cta_cc03e1, .cta__1699b))) .contentExpanded__24e2c:not([class*="Accepted"]) {
+#app-mount [data-testid="quest-bar-container"]:hover > [class*="contentWrapper"]:not(:has(> :is(.contentCollapsed_7Oadp0, .contentCollapsedWrapper_7Oadp0, .contentCollapsedBackgroundWrapper_ZzrVHV) :is(.cta_ZzrVHV, .cta_ZzrVHV))) .contentExpanded_A1jYpL:not([class*="Accepted"]) {
     display: block !important;
     position: static !important;
     /* Stock's crossfade slide is written for the absolute model; with the row
@@ -3903,7 +3903,7 @@ body, #app-mount, .theme-dark:not(.custom-user-profile-theme) {
    Claim Reward CTA below the bar box under the account panel buttons, and the
    click landed on the voice buttons row instead of the button (measured live
    on TestCord 2.3.0/9334: elementFromPoint at the hovered CTA returned
-   .buttons__37e49). Key the completed-bar guard on the wrapper too; placed
+   .buttons_g6VwXp). Key the completed-bar guard on the wrapper too; placed
    after the hover rules so it wins their equal-specificity tie. */
 #app-mount [data-testid="quest-bar-container"] [class*="contentWrapperAccepted"] [class*="contentCollapsed"] {
     display: flex !important;
@@ -3917,7 +3917,7 @@ body, #app-mount, .theme-dark:not(.custom-user-profile-theme) {
    :not([class*="Accepted"]) row guard always passes, and the swap's container:hover rule sits
    one class level above the 3.1.63 pins, so on hover it wins the display tie — measured live on
    TestCord 2.3.0/9334 with the real QuestBar: on hover the collapsed row goes display: none,
-   the expanded promo row renders in flow (bar 78 -> 155px) under the wrapper's overlay__0d616
+   the expanded promo row renders in flow (bar 78 -> 155px) under the wrapper's overlay_jdr5pz
    layer (absolute inset-0, pointer-events: all on this build, no inline style for the 3.1.47
    rule to match), so elementFromPoint at the full-width CTA returns the overlay and the click
    never reaches the button; the promo's copy also renders washed-out under the wrapper's
@@ -3996,8 +3996,8 @@ body, #app-mount, .theme-dark:not(.custom-user-profile-theme) {
    alone, "none" in the list). Rewritten as `> div >`, which is valid, drops no
    specificity, and matches the same grandchild shape the original meant
    (outer div -> child div -> preview). No nested :has(). */
-#app-mount [data-testid="quest-bar-container"] div:has(> .videoQuestPreviewCont__1699b),
-#app-mount [data-testid="quest-bar-container"] div:has(> div > .videoQuestPreviewCont__1699b) {
+#app-mount [data-testid="quest-bar-container"] div:has(> .videoQuestPreviewCont_ZzrVHV),
+#app-mount [data-testid="quest-bar-container"] div:has(> div > .videoQuestPreviewCont_ZzrVHV) {
     height: auto !important;
     overflow: visible !important;
 }
@@ -4039,10 +4039,10 @@ body, #app-mount, .theme-dark:not(.custom-user-profile-theme) {
 }
 
 /* Keep banner artwork inside the channel panel's rounded border. */
-#app-mount .sidebarList__5e434 {
+#app-mount .sidebarList_pog62O {
     overflow: hidden;
 }
-#app-mount .sidebarList__5e434 .bannerVisible_f37cb1 .header_f37cb1 {
+#app-mount .sidebarList_pog62O .bannerVisible_XH4OpX .header_XH4OpX {
     border-top: none;
 }
 
@@ -4235,7 +4235,7 @@ body,
     pointer-events: none;
     z-index: -1;
 }
-#app-mount .nowPlayingNotificationAnimationWrapper__81a05 {
+#app-mount .nowPlayingNotificationAnimationWrapper_LCQ2_0 {
     opacity: 1;
 }
 .vc-mds-modal {
@@ -4288,7 +4288,7 @@ body,
 
 /* The native Windows title bar already shows the server and channel.
    Hide Discord's duplicate title text; keep the bar, navigation and toolbar. */
-:where(html:not([data-mc-bar-title="show"])) .bar_c38106 > .title_c38106 > * {
+:where(html:not([data-mc-bar-title="show"])) .bar_3zSH5d > .title_3zSH5d > * {
     visibility: hidden;
 }
 
@@ -4299,11 +4299,11 @@ body,
     [class*="toast_"],
     [class*="customToast_"],
     [class*="errorNotificationContainer_"],
-    .reactionTooltip_bbcccb,
+    .reactionTooltip_5l5ajC,
     [class*="tooltipPrimary_"], [class*="tooltipGrey_"], [class*="tooltipBrand_"],
     [class*="tooltipRed_"], [class*="tooltipGreen_"], [class*="rewardTooltip_"],
-    .timelineTooltip__68788,
-    .errorTooltip__3b3ff,
+    .timelineTooltip_bktSrU,
+    .errorTooltip_JULZbQ,
     .vc-class-highlight-tooltip,
     .vc-bactivities-controls-tooltip, .vc-popover-overflow,
     .vc-bie-picker > .vc-bie-drawer, [class*="vc-bie-drawer"],
@@ -4328,13 +4328,13 @@ body,
 }
 /* Reserve the typing row without a second translucent fill. Clip scrolling
    messages above the row so their text cannot overlap the typing indicator. */
-#app-mount .chatContent_f75fb0 .messagesWrapper__36d07::before {
+#app-mount .chatContent_z_gUBg .messagesWrapper_8AE1Qq::before {
     background: transparent !important;
 }
-#app-mount .chatContent_f75fb0 .scroller__36d07 {
+#app-mount .chatContent_z_gUBg .scroller_8AE1Qq {
     mask: linear-gradient(to bottom, #000 calc(100% - 26px), transparent calc(100% - 26px));
 }
-#app-mount .chatContent_f75fb0 .chatGradientBase__36d07 {
+#app-mount .chatContent_z_gUBg .chatGradientBase_8AE1Qq {
     background: transparent !important;
 }
 
@@ -4350,37 +4350,37 @@ body,
 /* Center the typing line. The row shrink-wraps its text by default, so centering
    does nothing until the row spans the composer. Measured in a fixture: the text
    sat 167px left of the composer center before the right edge rule, 0px after it. */
-:where(html:not([data-mc-typing="left"])) :is(.vc-typing-indicator, .typing_b88801) {
+:where(html:not([data-mc-typing="left"])) :is(.vc-typing-indicator, .typing_U9Tvvz) {
   justify-content: center !important;
   text-align: center !important;
 }
-:where(html:not([data-mc-typing="left"])) .typing_b88801 {
+:where(html:not([data-mc-typing="left"])) .typing_U9Tvvz {
   right: var(--border-thickness) !important;
   padding-left: 0 !important;
 }
-/* The text sits one level down, in .typingDots_b88801 (a plain flex row with 8px
+/* The text sits one level down, in .typingDots_U9Tvvz (a plain flex row with 8px
    left padding) and carries a 24px left margin that made room for the dots. Both
    have to go, or the text stays at the left. Measured on the real indicator in
    #bo2-modding: text center 677px before, 1046px after, composer center 1047px. */
-:where(html:not([data-mc-typing="left"])) .typing_b88801 .typingDots_b88801 {
+:where(html:not([data-mc-typing="left"])) .typing_U9Tvvz .typingDots_U9Tvvz {
   justify-content: center !important;
   padding-left: 0 !important;
 }
-:where(html:not([data-mc-typing="left"])) .typing_b88801 .typingDots_b88801 .text_b88801 {
+:where(html:not([data-mc-typing="left"])) .typing_U9Tvvz .typingDots_U9Tvvz .text_U9Tvvz {
   margin-left: 0 !important;
   text-align: center !important;
 }
 
 /* The bouncing dots sat flush against the name and slightly low. Give them a gap
    and lift them onto the text's centre line, in both placements. */
-.typing_b88801 :is(.dots_b88801, .ellipsis_b88801) {
+.typing_U9Tvvz :is(.dots_U9Tvvz, .ellipsis_U9Tvvz) {
   margin-inline-end: 3px !important;
   translate: -2px -2px;
 }
 
 /* Hide the bouncing dots. */
-:where(html:not([data-mc-typing-dots="show"])) .dots_b88801,
-:where(html:not([data-mc-typing-dots="show"])) .typing_b88801 .dots_b88801,
+:where(html:not([data-mc-typing-dots="show"])) .dots_U9Tvvz,
+:where(html:not([data-mc-typing-dots="show"])) .typing_U9Tvvz .dots_U9Tvvz,
 :where(html:not([data-mc-typing-dots="show"])) .vc-typing-indicator-dots,
 :where(html:not([data-mc-typing-dots="show"])) .vc-typing-indicator > div:nth-of-type(2) {
   display: none !important;
@@ -4397,7 +4397,7 @@ body,
 #app-mount [data-selenium-video-tile] {
     --custom-base-tile-border-radius: var(--vc-pfp-radius, 12px);
 }
-#app-mount [data-selenium-video-tile] .border__2f4f7 {
+#app-mount [data-selenium-video-tile] .border_7NOr2f {
     border-radius: var(--vc-pfp-radius, 12px) !important;
 }
 
@@ -4416,13 +4416,13 @@ body,
    3.1.72: exact paths (tileChild > content > background > avatar), measured on
    live tiles; the old descendant :has() and [class*=] targets made every DOM
    insert in the app restyle the whole tree. */
-#app-mount div[data-selenium-video-tile][style*="--vc-pfp-hide-bg"]:has(> .tileChild__2f4f7 > .content__2f4f7 > .background_fb62e2 > div[role="img"]) {
+#app-mount div[data-selenium-video-tile][style*="--vc-pfp-hide-bg"]:has(> .tileChild_7NOr2f > .content_7NOr2f > .background_fb62e2 > div[role="img"]) {
     overflow: visible !important; /* halo must leave the old box edges */
 }
-#app-mount div[data-selenium-video-tile][style*="--vc-pfp-hide-bg"]:has(> .tileChild__2f4f7 > .content__2f4f7 > .background_fb62e2 > div[role="img"]) > .tileChild__2f4f7 > .content__2f4f7 {
+#app-mount div[data-selenium-video-tile][style*="--vc-pfp-hide-bg"]:has(> .tileChild_7NOr2f > .content_7NOr2f > .background_fb62e2 > div[role="img"]) > .tileChild_7NOr2f > .content_7NOr2f {
     overflow: visible !important; /* one more clip level above the wrapper */
 }
-#app-mount div[data-selenium-video-tile]:not([style*="--vc-pfp-glow-slot"])[style*="--vc-pfp-hide-bg"]:has(> .tileChild__2f4f7 > .content__2f4f7 > .background_fb62e2 > div[role="img"]) > .tileChild__2f4f7 > .content__2f4f7 > .background_fb62e2 {
+#app-mount div[data-selenium-video-tile]:not([style*="--vc-pfp-glow-slot"])[style*="--vc-pfp-hide-bg"]:has(> .tileChild_7NOr2f > .content_7NOr2f > .background_fb62e2 > div[role="img"]) > .tileChild_7NOr2f > .content_7NOr2f > .background_fb62e2 {
     filter:
         drop-shadow(0 0 14px color-mix(in srgb, var(--bg-1) 40%, transparent))
         drop-shadow(0 0 3px color-mix(in srgb, var(--bg-1) 60%, transparent))
@@ -4431,7 +4431,7 @@ body,
 
 /* Known inner popup sheets share their containing glass. Keep submenus separate. */
 .vc-cal-picker-popover > .vc-cal-tool-popover,
-.recentMentionsPopout__95796 .messagesPopoutWrap__432f4 {
+.recentMentionsPopout_fXYEi6 .messagesPopoutWrap_6bgemo {
     background: transparent !important;
     -webkit-backdrop-filter: none !important;
     backdrop-filter: none !important;
@@ -4446,10 +4446,10 @@ body,
 /* The voice user strip's negative end margin pushes the overflow button's
    hover box past the panel edge. Keep the strip inside the panel, and size
    the Show All Users button like the 24px avatars beside it. */
-.scroller__68617 {
+.scroller_7FtMGA {
     margin-inline-end: 0 !important;
 }
-.voiceUsers__68617 > [data-mana-component="button"] {
+.voiceUsers_7FtMGA > [data-mana-component="button"] {
     width: 24px;
     height: 24px;
     min-width: 0;
@@ -4483,23 +4483,23 @@ body,
    and the chip are both row-centred children in every row shape, and the
    loosened chip gap keeps the full tag text (the row in the user's own
    server clipped the chip to a fading "HIF"). */
-li.containerDefault_c69b6d > .list_c3cd7d {
+li.containerDefault_Wx6SnQ > .list_6Du7S1 {
     padding-inline-start: 8px !important;
     padding-top: 6px !important;
     row-gap: 4px !important;
 }
-.listDefault__07f91 .content__07f91 {
+.listDefault_YUoOxm .content_YUoOxm {
     box-sizing: border-box !important;
     height: 32px !important;
 }
-.listDefault__07f91 .container__394db {
+.listDefault_YUoOxm .container_kQORUk {
     display: flex !important;
     align-items: center;
 }
-.listDefault__07f91 .content__07f91 > .icons__07f91 {
+.listDefault_YUoOxm .content_YUoOxm > .icons_YUoOxm {
     margin-inline-start: 4px !important;
 }
-.listDefault__07f91 .container__394db .chipletParent__394db {
+.listDefault_YUoOxm .container_kQORUk .chipletParent_kQORUk {
     padding-inline-start: 1px !important;
     flex-shrink: 0;
     display: flex;
@@ -4517,7 +4517,7 @@ li.containerDefault_c69b6d > .list_c3cd7d {
    name line and the row pitch stay untouched. Text-tag badges (useCrown
    off) keep stock alignment, and the other places (member, message,
    profile) are single-line and stay stock. */
-.listDefault__07f91 .vc-stafftag-voice {
+.listDefault_YUoOxm .vc-stafftag-voice {
     transform: translateY(-2px);
 }
 /* 3.1.38 (fix): boot-safe rephrase of the same alignment, measured live
@@ -4550,13 +4550,13 @@ li.containerDefault_c69b6d > .list_c3cd7d {
    strut - a name-font metric effect, not part of this pass. Chips outside
    the voice rows (member, message, profile) are single-line and stay
    stock. */
-.listDefault__07f91 .container__394db .chipletParent__394db {
+.listDefault_YUoOxm .container_kQORUk .chipletParent_kQORUk {
     align-self: flex-start;
     margin-top: 2.81px;
 }
 /* 3.1.39: the one member whose display name rides a custom font. Discord's
-   name-font feature tags that name's username block with dnsFont__89a31
-   chicle__89a31 (a Jellybean pick), and those metrics grow the row's strut
+   name-font feature tags that name's username block with dnsFont_OAgVZM
+   chicle_OAgVZM (a Jellybean pick), and those metrics grow the row's strut
    (username 28.2px against 26.14px, name line 20.06 against 18.00), so the
    crown's middle-anchor sits on a lower strut than every plain-font row:
    measured in the live renderer (Stable 9334 and PTB 9223, identical
@@ -4571,7 +4571,7 @@ li.containerDefault_c69b6d > .list_c3cd7d {
    seconds band regains a ~3px gap. The selector keys on the font class, so
    a member changing his font changes the class; different fonts carry
    different struts, extend a seat per font if anyone else picks one. */
-.listDefault__07f91 .container__394db .chicle__89a31 .vc-stafftag-voice {
+.listDefault_YUoOxm .container_kQORUk .chicle_OAgVZM .vc-stafftag-voice {
     transform: translateY(-3.5px);
 }
 
@@ -4581,7 +4581,7 @@ li.containerDefault_c69b6d > .list_c3cd7d {
    bar_b730cc.bar_b730cc rule carries only radius/flex/gap), so the two
    icons float bare over the banner art, and the strip's inner
    [class*="popover_"] leg would bleach any future root paint anyway: the
-   bar itself carries popover_c97e55. This bar now takes the same static
+   bar itself carries popover_yDAPhH. This bar now takes the same static
    raised Mocha pill its sibling Edit/Clear tooltips already paint
    (3.1.32): --bg-1 fill, hairline ring, inset highlight, soft drop
    shadow. Static, not frosted: the pill is 26px tall, where the frost
@@ -4592,7 +4592,7 @@ li.containerDefault_c69b6d > .list_c3cd7d {
    tooltip guard keeps the floating Edit/Clear tooltip labels in family.
    The :not() id never exists; it only outranks the strip's (0,2,0)
    important clear and any quickCss copy. */
-.bar_b730cc.popover_c97e55:not(#mochacord-status-pill-guard) {
+.bar_b730cc.popover_yDAPhH:not(#mochacord-status-pill-guard) {
     background: var(--mochacord-acrylic-tooltip) !important;
     -webkit-backdrop-filter: none !important;
     backdrop-filter: none !important;
@@ -4605,7 +4605,7 @@ li.containerDefault_c69b6d > .list_c3cd7d {
 /* 3.1.40 (2026-10-09): centre the profile owner crown between the voice
    speaker icon and the OWNER tag. Measured live on both profile surface
    name rows (popout probe + modal probe11): the crown box ends exactly
-   where botTagRegular__82f07 begins (gap 0) while the vc-uvs speaker icon
+   where botTagRegular_feVUtO begins (gap 0) while the vc-uvs speaker icon
    leaves an 8px gap, so the crown reads glued to the tag (user report,
    red arrows, 2026-10-09). translateX(-4px) splits the 24px dead band
    into two 4px gaps - the crown stands equidistant from the speaker and
@@ -4622,7 +4622,7 @@ li.containerDefault_c69b6d > .list_c3cd7d {
    DavidHiFi's own user row with its timeCounter band): the username span
    centres at container top + 10.5 (span y 399.9, 17.0 tall inside a
    397.9-top container) and the pinned chip rides +10.81 per the 3.1.38
-   seat, while the stock icons__07f91 column and the VoiceVUMeters row
+   seat, while the stock icons_YUoOxm column and the VoiceVUMeters row
    meter are both content-level flex children that centre-ride the 32px
    content: content top + 16 = container top + 14.05, so they read ~3.5px
    below every aligned item in the row (user capture 2026-10-09, red
@@ -4636,10 +4636,10 @@ li.containerDefault_c69b6d > .list_c3cd7d {
    data-vu-meter on the root, so these two selectors hold the whole
    right-side cluster. Bars are 18px (BAR_HEIGHT) and the icons column
    keeps its own height, so the lift only moves paint. */
-.listDefault__07f91 .content__07f91 > .icons__07f91 {
+.listDefault_YUoOxm .content_YUoOxm > .icons_YUoOxm {
     transform: translateY(-3.5px);
 }
-.listDefault__07f91 .content__07f91 > [data-vu-meter] {
+.listDefault_YUoOxm .content_YUoOxm > [data-vu-meter] {
     transform: translateY(-3.5px);
 }
 
@@ -4651,7 +4651,7 @@ li.containerDefault_c69b6d > .list_c3cd7d {
    63px away from the name. flex 0 1 auto sizes the block to its name; the
    chip then seats at the name's end on all three tagged rows (gap 0).
    Voice rows only. */
-.listDefault__07f91 .container__394db > .usernameContainer__394db {
+.listDefault_YUoOxm .container_kQORUk > .usernameContainer_kQORUk {
     flex: 0 1 auto !important;
 }
 
@@ -4693,7 +4693,7 @@ li.containerDefault_c69b6d > .list_c3cd7d {
 }
 
 /* 3.1.43 (2026-10-09): DM tile art corners. Discord's collectibles video
-   layer (.img_df39b2, 224px right-flushed over the 8px DM row) ships a
+   layer (.img_AFi54G, 224px right-flushed over the 8px DM row) ships a
    12px radius, so its corner arcs cut deeper than the row's own 8px
    curve and read as dark crescents at the row corners (live read stable
    9334: video 224x42 right-flushed over the row, radius 12px, inside the
@@ -4704,7 +4704,7 @@ li.containerDefault_c69b6d > .list_c3cd7d {
    that is the tile edge itself, not a layer defect (verified: the same
    edge with the video hidden paints the container gradient with no
    seam, and plain rows show no such line). No :has(). */
-.img_df39b2 {
+.img_AFi54G {
     border-radius: 0 8px 8px 0 !important;
 }
 
@@ -4851,7 +4851,7 @@ li.containerDefault_c69b6d > .list_c3cd7d {
     -webkit-backdrop-filter: none !important;
     backdrop-filter: none !important;
 }
-[data-mana-component="popover"] > :is([class*="popover_"], .popoverGradientWrapper_d6f39b):not(#mochacord-popover-body-guard) {
+[data-mana-component="popover"] > :is([class*="popover_"], .popoverGradientWrapper_81IzEA):not(#mochacord-popover-body-guard) {
     background: var(--mochacord-acrylic-background) !important;
     -webkit-backdrop-filter: var(--mochacord-acrylic-filter) !important;
     backdrop-filter: var(--mochacord-acrylic-filter) !important;
@@ -4862,27 +4862,27 @@ li.containerDefault_c69b6d > .list_c3cd7d {
    (ellipsis) while the tag stays whole, and tagged rows space their icons a
    little tighter so the reserved tag still fits beside them.
    A name squeezed below one glyph paints nothing instead of a fragment. */
-.name__91a9d:has(> .username__5d473 > .clanTag__5d473),
-.username__5d473:has(> .clanTag__5d473) {
+.name_J1Adu_:has(> .username_Iy0c7A > .clanTag_Iy0c7A),
+.username_Iy0c7A:has(> .clanTag_Iy0c7A) {
     min-width: auto;
 }
 
-.username__5d473:has(> .clanTag__5d473) {
+.username_Iy0c7A:has(> .clanTag_Iy0c7A) {
     display: grid;
     grid-auto-flow: column;
     grid-template-columns: minmax(0, auto);
     align-items: center;
 }
 
-.username__5d473:has(> .clanTag__5d473) > .name__5d473 {
+.username_Iy0c7A:has(> .clanTag_Iy0c7A) > .name_Iy0c7A {
     max-width: round(nearest, 100%, 0.75ch);
 }
 
 /* 3.1.72: the tag check sits on the name box (a sibling of the decorators)
    and the icon margin reset rides a style query, because a :has() followed
    by "> *" made every DOM insert in the app restyle the whole tree. */
-.nameAndDecorators__91a9d > .name__91a9d:has(> .username__5d473 > .clanTag__5d473) ~ .vc-member-list-decorators-wrapper,
-.nameAndDecorators__91a9d > .name__91a9d:has(> .username__5d473 > .clanTag__5d473) ~ * .vc-member-list-decorators-wrapper {
+.nameAndDecorators_J1Adu_ > .name_J1Adu_:has(> .username_Iy0c7A > .clanTag_Iy0c7A) ~ .vc-member-list-decorators-wrapper,
+.nameAndDecorators_J1Adu_ > .name_J1Adu_:has(> .username_Iy0c7A > .clanTag_Iy0c7A) ~ * .vc-member-list-decorators-wrapper {
     gap: 2px !important;
     --mochacord-clan-tag-row: 1;
 }
@@ -4902,7 +4902,7 @@ li.containerDefault_c69b6d > .list_c3cd7d {
    own surface. The shell root keeps its paint, so the modal surface and
    the search field are unchanged; tooltips and menus portal outside the
    shell and keep their own look. */
-.modal__67dba * {
+.modal_COIWNl * {
     --background-base-low: transparent;
     --background-base-lower: transparent;
     --background-base-lowest: transparent;
@@ -4913,7 +4913,7 @@ li.containerDefault_c69b6d > .list_c3cd7d {
    solid --background-surface-high card (#181825 measured) with an elevation
    shadow on the lighter chat surface, reading as an out-of-place popup. Lay
    it bare on the chat: same icon, copy and buttons, no box of its own. */
-.safetyBanner__51e4d {
+.safetyBanner_nOu8a3 {
     background: transparent;
     box-shadow: none;
 }
