@@ -104,6 +104,17 @@ Thanks for the stars, screenshots and fixes.
 
 - **Author:** Myself, [DavidHiFi](https://github.com/DavidHiFi)
 
+<!-- contributors:start -->
+- **AI coding agents:** [Claude Code](https://github.com/anthropics/claude-code), Halo Sparks and [Arena Agent](https://github.com/arena-agent)
+
+<p>
+  <a href="https://github.com/DavidHiFi"><img src="https://github.com/DavidHiFi.png?size=96" width="48" height="48" alt="DavidHiFi" title="DavidHiFi"></a>
+  <a href="https://github.com/anthropics/claude-code"><img src="https://github.com/claude.png?size=96" width="48" height="48" alt="Claude Code" title="Claude Code"></a>
+</p>
+
+<sub>GitHub's contributor list also shows openhands-agent. Our machines had the wrong git name set from late October to November 26, 2026, so some commits by the agents above carry that name. OpenHands did not work on this project.</sub>
+<!-- contributors:end -->
+
 | Who | What |
 |---|---|
 | **refact0r** ([Midnight](https://github.com/refact0r/midnight-discord), MIT) | The base theme, inlined in `MochaCord.css` with its MIT notice: layout, rounded panels, window buttons and the transparency options. |
